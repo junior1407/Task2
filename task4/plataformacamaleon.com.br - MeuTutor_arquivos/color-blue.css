@@ -1,0 +1,28 @@
+
+/** color da fonte do nome da instituicao **/
+#logo_instituicao, #modulo_tipo { color: #FAFBFB; }
+
+/** cor sidebar **/
+#sidebar-wrapper { background: #013161; }
+
+/** cor borda inferior do menu na sidebar **/
+.sidebar-nav li { border-bottom-color: #6184B5; }
+
+/** cor da fonte do menu na sidebar **/
+.sidebar-nav li a { color: #FAFBFB; }
+
+/** cor icone selecionado **/
+.sidebar-nav li a:hover, .sidebar-nav .selected { background: #D4DAE5; color: #013161; }
+
+/** cor do background do submenu **/
+.submenu { background-color: #D4DAE5; }
+
+/** cor da fonte do sub menu **/
+.submenu ul li a { border-bottom: 1px solid #c0cbd6; border-top: 1px solid #c0cbd6; color: #021724; }
+
+/**  cor no mouse hover submenu **/
+.submenu ul li a:hover, .submenu ul li a:focus { background-color: #9EB3D8; }
+
+.box-combo { background-color: #013161; height: 50px; padding: 8px }
+
+.color-theme { color: #013161 }

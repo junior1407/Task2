@@ -1,0 +1,90 @@
+html { overflow: -moz-scrollbars-vertical; overflow-y: scroll; width:100%;}
+*:focus { outline: none; }
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+#wrapper { padding-left: 0; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; }
+#wrapper.toggled { padding-left: 250px; }
+#sidebar-wrapper { height: 100%; left: 0; position: fixed; overflow-y: auto; overflow-x: hidden; top: 0; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; z-index: 0; }
+
+#wrapper.toggled #sidebar-wrapper { width: 250px; }
+#page-content-wrapper { padding: 15px; width: 100%; }
+#wrapper.toggled #page-content-wrapper { margin-right: -250px; position: absolute; }
+
+#logo_instituicao { width: 100%; position: relative; margin-bottom: 20px;}
+#logo_instituicao img{ width: 80%; display: inline-block; margin-left: -20px;}
+
+#logo_instituicao_mini { display: none; margin: 0 0 10px 8px; }
+
+#modulo_tipo { overflow: hidden; }
+#modulo_tipo h5{ font-weight: bold; margin: 15px 0; }
+
+/* Sidebar Styles */
+
+.navbar-header .logo { float: left; padding: 3px 15px 7px; }
+.sidebar-nav i { font-size: 2em; height: 45px; vertical-align: bottom; width: 60px; }
+.sidebar-nav { list-style: none; margin: 80px 0 0; padding: 0; position: absolute; top: 0; width: 250px; }
+.sidebar-nav li { border-bottom: 1px solid; line-height: 60px; }
+
+.sidebar-nav li a { display: block; text-decoration: none; outline: 0; }
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus { text-decoration: none; }
+.sidebar-nav li span { margin: 19px 10px 0 0; opacity: 0.3; }
+
+/***************************************
+** MENU LATERAL - SIDE BAR *************
+***************************************/
+
+/**
+*** submenu
+**/
+
+.submenu { height: 100%; left: 250px; padding: 80px 10px 0; position: absolute; transition-property: left; transition-duration: 0.6s; transition-delay: 0.1s; width: 190px; }
+.submenu_hover { left: 60px; z-index: 100; }
+.submenu ul { float: left; left: 0; margin-top: 25px; padding: 0; position: absolute; width: 100%; }
+.submenu ul li { float: left; list-style: none outside none; padding: 0; width: 100%; }
+.submenu ul li a { float: left; height: 50px; line-height: 50px; padding: 0 5px 0 20px; text-decoration: none; width: 100%; }
+.submenu ul li a strong { padding-left: 10px; }
+.submenu .arrow { float: right; margin-right: 20px; }
+
+.submenu-inside a { border-top: 0 none !important; float: left; padding-right: 30px !important; width: 100%; }
+.submenu-inside { float: left; text-align: right; width: 100%; }
+
+/**
+*** alunos
+**/
+
+.sidebar-nav > .sidebar-brand { height: 65px; font-size: 18px; line-height: 60px; }
+.sidebar-nav > .sidebar-brand a { color: #999999; }
+.sidebar-nav > .sidebar-brand a:hover { background: none; color: #fff; }
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}

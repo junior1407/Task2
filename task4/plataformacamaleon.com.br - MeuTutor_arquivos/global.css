@@ -1,0 +1,919 @@
+html{
+    min-height:100%; /* make sure it is at least as tall as the viewport */
+    position:relative
+}
+body{
+    min-height: 100%;
+    height: 100%;  /*force the BODY element to match the height of the HTML element */
+}
+a { color: #2c3e50; outline:none !important }
+
+@media screen and (max-width: 480px) {
+    #container-student {padding-top: 50px }
+}
+@media screen and (min-width: 481px){
+    #container-student { margin-top: 125px !important; padding-top: 50px }
+}
+
+body { font-family: 'Open Sans', sans-serif !important; }
+/*#body { min-height: 1080px !important }*/
+/*#container-student { min-height: 1080px }*/
+
+.margin-auto { margin-left: auto; margin-right: auto }
+
+.page-content-wrapper { padding: 15px; width: 100%; height: 100%; }
+.no-border { border: 0px !important; }
+.no-padding { padding: 0px !important; }
+.no-padding-left-right { padding-left: 0px; padding-right: 0 }
+.no-padding-left { padding-left: 0px; }
+.no-padding-right { padding-right: 0px; }
+.padding-9px-top-and-left { padding: 9px 0 0 9px !important; }
+.padding-9px-top { padding: 9px 0 0 0px !important; }
+.well { margin-bottom: 0; }
+.clearfix { clear: both; padding: 10px 0; }
+.clearfixPadding5 { clear: both; padding: 5px 0; }
+.clearfixWithoutPadding { clear: both; }
+
+.bold { font-weight: bold; }
+
+.pre-load { opacity: 0.5; height: 100px; padding-top: 40px; }
+
+.border-bottom-col-md { border-bottom: 2px solid #ffffff; }
+.border-top-col-md { border-top: 2px solid #ffffff; }
+
+.table td { height: 40px; }
+
+.opacity30 { opacity: 0.3; }
+.opacity80 { opacity: 0.8; }
+
+.linkWithoutStyle { color: #484848; }
+.tooltip { position: fixed !important; }
+
+.muteLayer { opacity:0.65; -moz-opacity: 0.65; filter: alpha(opacity=65); background-color: white; width: 100%; z-index: 99998; position: absolute; top: 0 }
+.iconLayer { position: absolute; z-index: 99999; left: 50%; color: black; }
+
+.infoLoadingCard { display: none; height: 34px; padding-top: 9px; text-align: center !important; }
+/*.table-with-content-area { margin-bottom: 0px; width: 98.5%; }*/
+.table-with-content-area { margin-bottom: 0px; }
+
+.well.well-sm > h5 { color: #2c3e50; font-weight: bold; margin-top: 4px !important; }
+
+/************ CORES **************/
+
+.dark-blue { color: #0f6e8c !important; }
+.message em { color: #2C3E50 !important; }
+.white { color: white !important; }
+.silver { color: #999999 !important; }
+.purple { color: #825494 !important; }
+.green { color: #30A58D !important }
+.blue { color: #2099c0 !important; }
+.orange { color: #ff9933 !important; }
+.gold { color: #ffcc00 !important }
+.red { color: #cc6666 !important }
+.gray {  color: #666666 !important; }
+
+.aquamarine {background-color: #69a2b6 !important;}
+.back-purple { background-color: #825494 !important; }
+.back-green { background-color: #30A58D !important }
+.back-blue { background-color: #2099c0 !important; }
+.back-orange { background-color: #ff9933 !important; }
+.back-gold { background-color: #ffcc00 !important }
+.back-red { background-color: #cc6666 !important }
+.back-gray {  background-color: #cccccc !important; }
+
+.back-dark-purple { background-color: #592a6b !important; }
+.back-dark-blue { background-color: #0f6e8c !important; }
+.back-dark-green { background-color: #19846E !important }
+.back-dark-dark-blue { background-color: #0f9933 !important; }
+.back-dark-orange { background-color: #cc6600 !important; }
+.back-dark-gold { background-color: #cc9900 !important }
+.back-dark-red { background-color: #993333 !important }
+.back-dark-gray {  background-color: #666666 !important; }
+
+.back-purple-with-border { background-color: #825494 !important; border-bottom: 3px solid #592a6b !important; }
+.back-green-with-border { background-color: #30A58D !important; border-bottom: 3px solid #19846E !important; }
+.back-blue-with-border { background-color: #2099c0 !important; border-bottom: 3px solid #0f6e8c !important; }
+.back-orange-with-border { background-color: #ff9933 !important; border-bottom: 3px solid #cc6600 !important; }
+.back-gold-with-border { background-color: #ff9933 !important; border-bottom: 3px solid #cc6600 !important; } /* changing color */
+/* .back-gold-with-border { background-color: #ffcc00 !important; border-bottom: 3px solid #cc9900 !important; } */
+.back-red-with-border { background-color: #cc6666 !important; border-bottom: 3px solid #993333 !important; }
+.back-gray-with-border {  background-color: #cccccc !important; border-bottom: 3px solid #666666 !important; }
+
+.back-blue-3e90bb { background-color: #3e90bb !important; }
+.back-light-gray { background-color: lightgray; }
+.back-light-gold { background-color: #D9C143; }
+.back-purple-student { background-color: #825494; }
+.back-pink { background-color: #7D59B0; }
+.back-gren-exercise-card {background-color: #69a2b6;}
+.back-purple-exercise-card {background-color: #B292C9;}
+.back-red-exercise-card {background-color: #ED3137;}
+.back-blue-exercise-card {background-color: #5B9DC7;}
+
+/************** NICE FORM *********/
+
+.niceform input[type=checkbox] { cursor: pointer; margin-right: -36px; opacity: 0; width: 30px; }
+.niceform input[type=checkbox] + span:before { background-color: white; border-radius: 2px; cursor: pointer; content: ""; display: inline-block; height: 30px; margin-right: -17px; margin-top: -3px; text-align: center; vertical-align: middle; visibility: visible; width: 30px; -moz-border-radius: 2px; -webkit-border-radius: 2px; }
+.niceform input[type=checkbox]:checked + span:before { background-color: #b9b6b8; content: ""; }
+span.class-box { margin: 6px; font-weight: bold; }
+.circle-min { width: 25px; height: 25px; text-align: center; color: #ffcc00; background-color: white; border-radius: 50%; padding-top: 3px; margin-left: 5px;}
+.formSearchFormat { background-color: white; border-radius: 30px; height: 30px; }
+
+/************** HOME **************/
+
+#logoIndex { max-height: 200px; margin-bottom: 10px; }
+/*#loginInfo i{ display: none; }*/
+#spinContainer{ display: none; }
+
+/************ IMAGENS PERFIL *************/
+
+.img-user-mini { margin-right: 5px; height: 20px; width: 20px; }
+.img-user-small { margin-right: 0px; height: 40px; width: 40px; }
+.img-user { height: 80px; width: 80px; }
+
+/************ DASHBOARD - PROF - BOX QUESTOES **************/
+
+.answers { color: #ffffff; height: 150px; padding: 0px 4px; text-shadow: 2px 2px 3px #2c3e50; }
+.answers h1 { font-size: 42px; font-weight: bold; margin: 20px 0 0 10px; padding: 0; position: inherit; z-index: 1; }
+.answers h4 { font-size: 14px; font-weight: normal; margin: 0 0 0 10px; padding: 0; position: inherit; z-index: 1; }
+.answers .background { background: none repeat scroll 0 0 #2c3e50; bottom: 0; height: 100%; position: absolute; width: 97%; z-index: 0; }
+.answers-correct { text-shadow: 2px 2px 3px #6cba9b; }
+.answers-correct .background { background: none repeat scroll 0 0 #6cba9b; }
+.answers-wrong { text-shadow: 2px 2px 3px #c84d3f; }
+.answers-wrong .background { background: none repeat scroll 0 0 #c84d3f; }
+
+/************ DASHBOARD - TEACHER - CLASSES *****************/
+
+.teacher-dashboard-main-classes { float: left; margin: 0; overflow: auto; padding: 0; white-space: nowrap; width: 100%; }
+.teacher-dashboard-main-classes li { display: inline-table; list-style: outside none none; margin: 5px 5px 15px 5px; text-align: center; width: 85px; }
+.teacher-dashboard-main-classes li a { border-radius: 5px; color: #6B747E; float: left; overflow: hidden; padding: 15px 5px 15px 0; width: 85px; }
+.teacher-dashboard-main-classes li a:hover { background-color: #e7e7e7; }
+.teacher-dashboard-main-classes li strong { color: #2c3e50; }
+.teacher-dashboard-main-classes li .circle { border: 2px solid #2c3e50; border-radius: 30px; color: #2c3e50; display: inline-block; font-size: 22px; height: 50px; margin: 5px 0; padding-top: 7px; text-align: center; width: 50px; }
+.teacher-dashboard-main-classes li .circleLarge { border: 3px solid #2c3e50; border-radius: 50%; color: #2c3e50; display: inline-block; font-size: 50px; height: 50px; margin: 5px 0; padding-top: 12px; text-align: center; width: 100px; height: 100px; }
+.smal-card {color: white; height: 70px; padding-top: 15px; font-size: 10px}
+.smal-card p{font-size: 12px; font-weight: bold; padding-top: 5px;}
+.table-hover-gray {}
+.table-hover-gray tr:hover{background-color: #C2C3C5; cursor: default;}
+.card-of-higchart{height: 365px; padding: 0px; margin: 0px}
+.classroom-assessment{ height: 95px;}
+.classroom-assessment .assessment-mainCard label { margin-top: -10px; color: white;}
+.classroom-assessment .assessment-col-explanation label{  font-size: 20px; font-weight: bold; padding-top: 10px}
+.classroom-assessment .assessment-col-explanation p{  font-size: 13px; font-weight: normal !important; padding-top: 10px}
+.assessment-col-explanation {  border-right: 1px solid #999999; height: 95px}
+.score-exercise-card {padding: 15px;}
+.score-exercise-card p {color: #2C3E50; font-size: 23px;}
+
+/************ DASHBOARD - TEACHER - STUDENTS *****************/
+
+.teacher-dashboard-main-students { float: left; margin: 0; overflow: auto; padding: 0; white-space: nowrap; width: 100%; height: 161px;}
+.teacher-dashboard-main-students li { display: inline-table; list-style: outside none none; text-align: center; width: 100px; }
+.teacher-dashboard-main-students li a { border-radius: 5px; color: #6B747E; float: left; overflow: hidden; padding: 5px 5px 5px 0; width: 100px; }
+.teacher-dashboard-main-students li a:hover { background-color: #e7e7e7; }
+.teacher-dashboard-main-students li strong { color: #2c3e50; }
+.teacher-dashboard-main-students li .circle { border: 2px solid #2c3e50; border-radius: 30px; color: #2c3e50; display: inline-block; font-size: 22px; height: 50px; margin: 5px 0; padding-top: 7px; text-align: center; width: 50px; }
+.teacher-dashboard-main-students li .circleLarge { border: 3px solid #2c3e50; border-radius: 50%; color: #2c3e50; display: inline-block; font-size: 50px; height: 50px; margin: 5px 0; padding-top: 12px; text-align: center; width: 100px; height: 100px; }
+
+/************ TEACHER - ALL CONTENT ********************/
+
+.questions-enunciation .img img { width: 100% }
+#modal-title .div-question-enunciation img { width: 100% }
+#modal-title .div-question-enunciation { height: auto !important; }
+
+/************ TEACHER - EXERCISE ***********************/
+
+/*    .teacher-exercise-data-question img { max-width: 450px }
+    .teacher-exercise-data-question p>img { max-width: 450px }
+    @media (min-width: 768px) and (max-width: 991px)
+    {
+      .teacher-exercise-data-question img { max-width: 370px }
+      .teacher-exercise-data-question p>img { max-width: 370px }
+    }
+    @media (max-width: 767px)
+    {
+      .teacher-exercise-data-question img { max-width: 200px }
+      .teacher-exercise-data-question p>img { max-width: 200px }
+    }*/
+
+#exercise-resources img{max-width: 120px; };
+#exercise-resources p>img{max-width: 120px; };
+
+/************ DASHBOARD - CALENDAR - INNER DATEPICKER *****************/
+
+.dashboard-main-calendar-box-teacher { float: left; width: 20%; }
+.dashboard-main-calendar-teacher { background-color: #6e6f70; color: #ffffff; height: 300px; margin: 0 5px; padding: 5px 8px;  }
+.dashboard-main-calendar-teacher .title { font-size: 16px; line-height: 24px; }
+.dashboard-main-calendar-teacher .title h1 { float: left; font-size: 50px; font-weight: bold; margin: 3px 0 0; width: 100%; }
+.dashboard-main-calendar-teacher ul { font-size: 12px; list-style: inside; padding: 0; }
+.dashboard-main-calendar-teacher-today { background-color: #26B397; }
+.dashboard-main-calendar-teacher a { color: white; font-style: italic; font-size: 12px; }
+.dashboard-main-calendar-teacher a:hover { cursor: pointer; text-decoration: underline; text-decoration-color: white;}
+.dashboard-main-calendar-teacher .popover {width: 400px !important;}
+.dashboard-main-calendar-teacher .popover-title {color: #2c3e50 !important; font-weight: bold;}
+.dashboard-main-calendar-teacher .popover-content {color: #2c3e50 !important;}
+
+.dashboard-main-calendar-teacher-datepicker .ui-datepicker { background-color: transparent; border: 0; }
+.dashboard-main-calendar-teacher-datepicker .ui-datepicker .ui-widget-header {	border-bottom: 2px solid #6E6F70; color: #6E6F70; font-weight: bold; }
+.dashboard-main-calendar-teacher-datepicker .ui-datepicker .ui-datepicker-prev { color: #6E6F70 }
+.dashboard-main-calendar-teacher-datepicker .ui-datepicker .ui-datepicker-next { color: #6E6F70 }
+.dashboard-main-calendar-teacher-datepicker .ui-datepicker th { color: #6E6F70; }
+.dashboard-main-calendar-teacher-datepicker .ui-state-highlight { background-color: #26B397; }
+.dashboard-main-calendar-teacher-datepicker .ui-widget-content .ui-state-highlight { background-color: #26B397; }
+.dashboard-main-calendar-teacher-datepicker .ui-widget-header .ui-state-highlight { background-color: #26B397; }
+.dashboard-main-calendar-teacher-datepicker .ui-state-hover { background-color: #26B397; }
+.dashboard-main-calendar-teacher-datepicker .ui-widget-content .ui-state-hover { background-color: #26B397; }
+.dashboard-main-calendar-teacher-datepicker .ui-state-focus { background-color: #26B397; }
+.dashboard-main-calendar-teacher-datepicker .ui-widget-content .ui-state-focus { background-color: #26B397; }
+.dashboard-main-calendar-teacher-datepicker .ui-datepicker .ui-datepicker-calendar .ui-state-highlight { background: #6E6F70; }
+.dashboard-main-calendar-teacher-datepicker .ui-datepicker .ui-datepicker-calendar .ui-state-active { background: #16A085; font-weight: bold; border-radius: 20px; color: #FFFFFF; }
+
+
+#student-calendar-full{
+  margin-top: -2%;
+}
+
+/************ BARRA DE PROGRESSO **************/
+
+.progress { background: none; border-radius: 0; box-shadow: none; font-size: 11px; height: 14px; margin: 0; }
+.progress p { float: left; margin-left: 4px; position: static; }
+
+/************ TOP FIVE CLASS DASHBOARD **************/
+
+.top-five-more { font-size: 12px; }
+
+.top-five-more .name { overflow: hidden; padding-left: 0; white-space: nowrap; }
+
+.top-five-more .row { font-size: 11px; margin: 0; padding: 5px 0; }
+.top-five-more .col-lg-1 { padding: 0; }
+
+.top-five-class .top-five-title { font-weight: bold; }
+.top-five-class h3 { margin: 7px 0; }
+.top-five-class h6 { line-height: 16px; margin: 5px 0; }
+
+/************ CLASSE - ALUNOS TURMA **************/
+
+.class table td { font-size: 12px !important; }
+
+/************ MENSAGENS **************/
+
+.message em { font-size: 11px; opacity: 0.6; }
+
+/************ ROTACIONAR ITENS *******/
+
+/* rotacionar nome do menu */
+.rotate { display: block; height: 94px;
+
+          -webkit-transform: rotate(-90deg);
+          -moz-transform: rotate(-90deg);
+          -ms-transform: rotate(-90deg);
+          -o-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+
+          /* also accepts left, right, top, bottom coordinates; not required, but a good idea for styling */
+          -webkit-transform-origin: 38% 82%;
+          -moz-transform-origin: 38% 82%;
+          -ms-transform-origin: 38% 82%;
+          -o-transform-origin: 38% 82%;
+          transform-origin: 38% 82%;
+
+          /* Should be unset in IE9+ I think. */
+          filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+/* rotacionar seta do submenu */
+.rotate-submenu { display: block;
+
+                  -webkit-transform: rotate(-270deg);
+                  -moz-transform: rotate(-270deg);
+                  -ms-transform: rotate(-270deg);
+                  -o-transform: rotate(-270deg);
+                  transform: rotate(-270deg);
+
+                  /* also accepts left, right, top, bottom coordinates; not required, but a good idea for styling */
+                  -webkit-transform-origin: 80% 52%;
+                  -moz-transform-origin: 80% 52%;
+                  -ms-transform-origin: 80% 52%;
+                  -o-transform-origin: 80% 52%;
+                  transform-origin: 80% 52%;
+
+                  /* Should be unset in IE9+ I think. */
+                  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.width-100 { width: 100%; }
+/************ TREE **************/
+
+@media screen and (max-width: 480px) {
+    .canvas { height: 100px; width: 100px; margin: auto; padding-left: 5px;}
+}
+@media screen and (min-width: 481px){
+    .canvas { height: 100px; width: 155px; margin: auto; padding-left: 5px;}
+}
+
+.nodeBG { position: absolute; z-index: 0; }
+.node { position: absolute; z-index: 1 }
+.lineTree { clear: both; width: 100%; margin-bottom: 25px; }
+.lineTree a, .lineTree a:hover { color: #2C3E50; }
+
+
+.widthTree_25 { width: 25%; margin-bottom: 25px; }
+.widthTree_33 { width: 33%; margin-bottom: 25px; }
+.widthTree_34 { width: 34%; margin-bottom: 25px; }
+.widthTree_50 { width: 50%; margin-bottom: 25px; }
+.widthTree_66 { width: 66%; margin-bottom: 25px; }
+.widthTree_100 { width: 100%; margin-bottom: 25px; padding-right: 8px; }
+
+.widthTree_left { float: left; }
+.widthTree_middle { float: left; }
+.widthTree_middle_align { margin: auto; }
+.widthTree_right { float: right; }
+
+#containerTree { background-color: #eceff0; border-radius: 3px  }
+#containerTree hr { border-color: white; }
+#containerTree h4 { margin-left: 20px; padding-top: 20px; }
+
+/************ SETA SIDEBAR **************/
+
+#seta { border-left-color: #425262; }
+
+/************ TOP FIVE CLASS DASHBOARD **************/
+
+.top-five-class { color: #FFFFFF; }
+.top-five-more .row { border-bottom: 1px solid #BCC1C4; }
+
+.top-five-plus { background-color: #16A085; }
+.top-five-minus { background-color: #C0392B; }
+
+/************ BARRA DE BUSCA **************/
+
+.searchField { height: 30px; border: 0; font-size: 12px; background-color: transparent; }
+
+/************ COORDENADOR **************/
+
+.seriesVinculadas p { padding-left: 30px; }
+.turno p { padding-left: 40px; }
+.padding-top-10px {padding-top: 10px}
+.margin-left-10px { margin-left: 10px; }
+.margin-right-10px { margin-right: 10px; }
+.margin-right-5px { margin-right: 5px !important; }
+.margin-left-5px { margin-left: 5px !important; }
+.margin-left-20px { margin-left: 20px; }
+.margin-left-30px { margin-left: 30px; }
+.cursor-pointer { cursor: pointer; }
+.cursor-default {cursor: default !important; }
+.margin-top-10px { margin-top: 10px; }
+.margin-top-15px { margin-top: 15px; }
+.margin-top-20px { margin-top: 20px; }
+.margin-top-25px { margin-top: 25px; }
+.margin-bottom-10px { margin-bottom: 10px; }
+.no-padding {padding: 0px 0px 0px 0px !important; }
+.no-margin {margin: 0px 0px 0px 0px !important; }
+.no-margin-bottom { margin-bottom: 0; }
+.no-margin-top{ margin-top: 0; }
+.margin-bottom-20px { margin-bottom: 20px; }
+.fa-ban { color: #c0392b !important; }
+.fa-check-circle-o { color: #30a58d !important; }
+.img-coordinator { max-width: 140px; margin: auto; }
+.img-coordinator-border { width: 140px; height: 140px; background-color: transparent; border: 1px solid #d7d7d7; border-radius: 140px; margin: auto; }
+.border-bottom-black { border-bottom: 1px solid black; }
+.border-bottom-dcdcdc { border-bottom: 1px solid #dcdcdc; }
+.border-top-dcdcdc { border-top: 1px solid #dcdcdc; }
+.border-bottom-e3 { border-bottom: 1px solid #e3e3e3; }
+.label { font-weight: normal; }
+.msg-equal-height-input { float: left; padding: 5px 12px; }
+
+
+/************ CARD QUESTÃO **************/
+
+.background-card-question { background-color: #2099c0; }
+
+/************ SIMULADO ************/
+
+.boxCreateTest { background-color: #EEEEEE; border: 1px solid #CCCCCC; border-radius: 5px; height: 400px; margin-bottom: 20px; }
+
+.boxCreateTest ul { background-color: #ffffff; border: 1px solid; border-radius: 5px; height: 100%; overflow: hidden; padding: 0; }
+.boxCreateTest ul li { float: left; list-style: none outside none; width: 100%; }
+.boxCreateTest ul li a { border-bottom: 1px solid #CCCCCC; color: #1c3c50; float: left; padding: 6px 10px; width: 100%; }
+.boxCreateTest ul li a:hover { background-color: #B5C5C8; }
+
+#listQuestionToTest { background-color: #ffffff; border: 1px solid #CCCCCC; border-radius: 5px; height: 500px; margin-bottom: 20px; overflow: auto; padding: 10px 0; }
+#listQuestionToTest .question { border-top: 1px solid #CCCCCC; cursor: pointer; padding: 10px 20px 15px; }
+#listQuestionToTest .question:hover { background-color: #B5C5C8; }
+#listQuestionToTest .question ul li { list-style: none; }
+
+#teacher-assessment-register-list-subjects { border: 1px solid black; background-color: white; padding: 0 }
+#teacher-assessment-register-subjects-to-save { border: 1px solid black; background-color: white; padding: 0 }
+
+#student-assessment-register-list-subjects { border: 1px solid black; background-color: white; padding: 0 }
+#student-assessment-register-subjects-to-save { border: 1px solid black; background-color: white; padding: 0 }
+
+/************ PLANO DE AULA ************/
+
+.box-lesson-plan-45 { float: left; width: 45%; }
+.box-lesson-plan-ball { float: left; width: 10%; }
+
+.box-class { height: 30px; width: 30px; border-radius: 6px; background-color: #b9b6b8; padding: 5px; float: left; margin: 2px; font-weight: bold; text-align: center; color: #E1E1E1; }
+.spaceTransparent { height: 120px; padding-top: 25px; }
+.line-ball { border-right: 3px solid #dcdcdc; float: left; height: 120px; left: 48%; position: relative; top: -30px; width: 3px; z-index: 1; }
+
+.question-ball { background-color: #dcdcdc; border-radius: 40px; width: 40px; height: 40px; border: 3px solid #2099c0; padding: 7px; font-weight: bold; margin: auto; z-index: 2; position: relative; }
+.video-ball { background-color: #dcdcdc; border-radius: 40px; width: 40px; height: 40px; border: 3px solid #30a58d; padding: 7px; font-weight: bold; margin: auto; z-index: 2; position: relative; }
+.default-ball { background-color: #dcdcdc; border-radius: 40px; width: 40px; height: 40px; border: 3px solid #a9a9a9; padding: 7px; font-weight: bold; margin: auto; z-index: 2; position: relative; color: gray }
+
+.box-video { /*width: 100%;*/ height: 100px; border: 3px dashed #dcdcdc; border-radius: 6px }
+.box-video img { max-width: 100px; }
+
+.box-question { /*width: 100%;*/ height: 100px; border: 3px dashed #dcdcdc; border-radius: 6px }
+.box-question img { max-width: 100px; }
+
+/* question-line */
+.box-line-grid-question { height: 100px; margin-bottom: 20px;}
+.box-line-grid-question .seta-esquerda { display: block; float: left; margin-top: 35px; }
+.box-line-grid-question .icon-question { float: left; height: 100px; width: 20%; display: block; color: white; -webkit-border-top-left-radius: 6px; -webkit-border-bottom-left-radius: 6px; -moz-border-radius-left: 6px; -moz-border-radius-bottomleft: 6px; border-top-left-radius: 6px; border-bottom-left-radius: 6px; }
+.box-line-grid-question .data-grid-question { display: table; height: 100px; background-color: #FFFFFF; -webkit-border-top-right-radius: 6px; -webkit-border-bottom-right-radius: 6px; -moz-border-radius-topright: 6px; -moz-border-radius-bottomright: 6px; border-top-right-radius: 6px; border-bottom-right-radius: 6px;}
+.box-line-grid-question .icon-dnd { display: none; }
+.box-line-grid-question .data-grid-question .data-question { background-color: white; float: left; height: 70px; overflow: hidden; padding: 10px; font-size: 11px; }
+.box-line-grid-question .data-grid-question .results { float: left; display: none; }
+.box-line-grid-question .data-grid-question fig { display: none; }
+.box-line-grid-question .data-grid-question p>img { display: none; }
+.box-line-grid-question .data-grid-question img { display: none; }
+.box-line-grid-question .data-grid-question .dificulty { float: right; margin-right: 15px; position: relative; bottom: 5px; }
+.box-line-grid-question .data-grid-question .trash-question { color: red; cursor: pointer; display: block; float: right; font-size: 16px; margin: 0 0 5px 5px; }
+
+.icon-question i { margin-top: 40px; }
+
+/* question-listagem */
+.trash-question { display: none;  }
+.data-question { font-weight: bold; margin-bottom: 10px; }
+.icon-question { display: none; }
+.seta-esquerda { display: none; width: 0; height: 0; border: 10px solid; border-color: transparent #2099c0 transparent transparent; }
+
+#listQuestions .question-list { border: 2px solid #F5F5F5; margin-top: 20px; padding-top: 10px; }
+#listQuestions .question-list:hover { background-color: #E0E0E0; /*border: 2px dashed #CBCBCB;*/ border-radius: 10px; }
+
+/* video-line */
+.box-line-grid-video { height: 100px; margin-bottom: 20px; }
+.box-line-grid-video .icon-dnd { display: none; }
+.box-line-grid-video .btn-add { display: none; }
+.box-line-grid-video .seta-direita { float: left; display: block; margin-top: 35px; }
+.box-line-grid-video .icon-video { float: left; height: 100px; width: 20%; display: block; color: white; -webkit-border-top-right-radius: 6px; -webkit-border-bottom-right-radius: 6px; -moz-border-radius-topright: 6px; -moz-border-radius-bottomright: 6px; border-top-right-radius: 6px; border-bottom-right-radius: 6px; }
+.box-line-grid-video .data-grid-video { text-align: center; float: left; width: 80%; height: 100px; background-color: #FFFFFF; -webkit-border-top-left-radius: 6px; -webkit-border-bottom-left-radius: 6px; -moz-border-radius-topleft: 6px; -moz-border-radius-bottomleft: 6px; border-top-left-radius: 6px; border-bottom-left-radius: 6px;}
+.box-line-grid-video .data-grid-video .title-video { padding: 10px 10px 0 10px; height: 30px; overflow: hidden; font-size: 12px; font-weight: normal; }
+.box-line-grid-video .data-grid-video .imagem-video { max-height: 50px ; margin-top: 10px; }
+.box-line-grid-video .data-grid-video .description { display: none; }
+.box-line-grid-video .data-grid-video .trash-video { color: red; cursor: pointer; display: block; float: left; font-size: 16px; margin: 10px 0 0 10px; }
+
+.icon-video i { margin-top: 39px; }
+
+/* video-listagem */
+.trash-video { display: none;  }
+.title-video { font-weight: bold; margin-bottom: 10px; height: 35px; overflow: hidden; }
+.icon-video { display: none; }
+.seta-direita { display: none; width: 0; height: 0; border: 10px solid; border-color: transparent transparent transparent #30a58d; }
+.description { display: block; height: 55px; overflow: hidden; }
+#listVideos .dragVideo { border: 2px solid #F5F5F5; padding-top: 10px; max-height: 145px; }
+#listVideos .dragVideo:hover { background-color: #E0E0E0; border: 2px dashed #CBCBCB; border-radius: 10px; }
+
+/************ Exercício ************/
+
+#questionListExercise .results { display: none }
+#questionListExercise .trash-exercise { display: show; cursor: pointer }
+#listQuestionOnDrag .trash-exercise { display: none }
+
+#exercise-resources .results { display: none }
+#exercise-resources .trash-question { display: block; cursor: pointer; position: absolute; right: 25px; top: 5px  }
+#exercise-resources .data-question { padding-right: 50px; text-align: justify  }
+#exercise-resources .icon-dnd { display: none  }
+#exercise-resources .dificulty { top: 35px; position: absolute; left: 92%  }
+#exercise-resources .idResourceExercise { height: 55px; overflow: hidden }
+
+/************ Assessment ************/
+
+#questionListAssessment .results { display: none }
+#questionListAssessment .trash-exercise { display: show; cursor: pointer }
+#listQuestionOnDrag .trash-exercise { display: none }
+
+#assessment-resources .results { display: none }
+#assessment-resources .trash-question { display: block; cursor: pointer; position: absolute; right: 25px; top: 5px  }
+#assessment-resources .data-question { padding-right: 50px; text-align: justify  }
+#assessment-resources .icon-dnd { display: none  }
+#assessment-resources .dificulty { top: 35px; position: absolute; left: 92%  }
+#assessment-resources .idResourceAssessment { height: 55px; overflow: hidden }
+
+/** diversos **/
+
+.font11px { font-size: 11px !important; }
+.font12px { font-size: 12px !important; }
+
+.badge-round { border-radius: 21px; display: inline-block; font-size: 12px; font-weight: 700; height: 26px; line-height: 1; min-width: 26px; padding-top: 7px; text-align: center; vertical-align: baseline; white-space: nowrap; }
+
+/***********************/
+/******** aluno ********/
+/***********************/
+
+.header-well { font-size: 18px !important; background-color: #3e90bb; font-style:italic; color: #fff !important; border-radius: 5px 5px 0px 0px; margin-top: 0px !important; padding: 5px 0px; margin-bottom: 15px; }
+.header-well > h5 { font-size: 18px !important; font-weight: 700; margin: 5px 0px !important; }
+
+.well-student { padding: 0 }
+
+.card-learning { min-height: 330px }
+
+/*.container-student {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 865px) {
+  .container-student {
+    width: 835px;
+  }
+}
+@media (min-width: 1110px) {
+  .container-student {
+    width: 1080px;
+  }
+}
+@media (min-width: 1340px) {
+  .container-student {
+    width: 1310px;
+  }
+}*/
+
+.breadcrumb .active { color: #337ab7; }
+.student-profile-data .form-group { margin-bottom: 5px }
+.hint-student-card-active {background-color: #cc9900}
+.disabled-pointer-event {pointer-events: none}
+
+div#classroom-card-strog-points{ padding-left: 0px;}
+div#classroom-card-weak-points{ padding-right: 0px;}
+
+@media(min-width: 992px) and (max-width: 1199px)
+{
+  
+}
+
+@media(min-width: 768px) and (max-width: 991px)
+{
+    div#classroom-card-strog-points{ padding-left: 15px;}
+    div#classroom-card-weak-points{ padding-right: 15px;}
+}
+
+@media(max-width: 767px)
+{
+    div#classroom-card-strog-points{ padding-left: 15px;}
+    div#classroom-card-weak-points{ padding-right: 15px;}
+    .totti-tour { display: none }
+    #social_container{
+        display: none;
+    }
+}
+
+.padlock-tree { height: 30px; width: 30px; padding: 9px; color: gray; background-color: #DADADA; border-radius: 50%; margin-top: 5px; float: left; margin-left: -30px }
+.padlock-tree:hover { height: 30px; width: 30px; padding: 9px; color: #DADADA; background-color: gray; border-radius: 50%; margin-top: 5px; float: left; margin-left: -30px }
+
+@media screen and (max-width: 360px) {
+    .padlock-tree{
+      margin-top: -15px;
+      margin-left: -10px;
+    }
+    .padlock-tree:hover{
+      margin-top: -15px;
+      margin-left: -10px;
+    }
+}
+
+/** auto complete **/
+.ms-helper { color: red !important; font-weight: bold; font-size: 12px !important; left: 0; position: absolute; top: 34px !important; }
+.ms-sel-item { position: absolute; }
+.ms-trigger { display: none; }
+
+/*********** CHAT ************/
+
+.chats { cursor: pointer; font-size: 12px; }
+.naoLida { background-color: #D6D6D6; }
+.chats:hover, .chatSelected { background-color: #B5C4C8; }
+.chats .photo { color: #354D62; padding: 10px 5px; width: 50px; }
+.chats .name { font-weight: bold; height: 17px; overflow: hidden; }
+.chats .message { margin-top: 5px; padding:5px;}
+.chats .message video { width: 100%; height: 300px; margin: 0 auto;}
+.chats .time { font-size: 12px; }
+
+.card-more-role { width: 80px; height: 80px; border-radius: 50%; background-color: white; margin: auto; margin-bottom: 10px; padding: 20px 15px }
+
+.columns-report-assessment-director { border-right: 1px solid #999999; margin-top: 10px; font: 12px; height: 85px }
+.columns-report-assessment-director .inner-column-report { font-size: 20px; font-weight: bold; padding-top: 5px }
+
+.btn-arrow { cursor: pointer; color: #f5f5f5; height: 40px; display: inline-block; background-color: #ccc; color: #444; padding: 0; text-decoration: none; box-sizing: border-box; font-family: Helvetica, Arial, sans-serif; font-size: 14px; border: 0px; margin: 5px 0; margin-right: 20px }
+.btn-arrow p { margin: 0; float: left; margin-top: 10px !important; color: white;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+.btn-arrow:hover { background-color: gray }
+.btn-arrow:hover::after { content: ""; display: inline-block; vertical-align: middle; margin-right: -20px; width: 0; height: 0; border-top: 20px solid transparent; border-bottom: 20px solid transparent; border-left: 20px solid gray; float: right }
+.btn-arrow::before{ content: ""; display: inline-block; vertical-align: middle; margin-right: 5px; width: 0; height: 0; border-top: 20px solid transparent; border-bottom: 20px solid transparent; border-left: 20px solid #f5f5f5; float: left }
+.btn-arrow::after { content: ""; display: inline-block; vertical-align: middle; margin-right: -20px; width: 0; height: 0; border-top: 20px solid transparent; border-bottom: 20px solid transparent; border-left: 20px solid #ccc; float: right }
+
+#footer-not-index { height: 80px; width: 100%; background-color: #f5f5f5; position: absolute; bottom: -90px; z-index: -1; color: #00978f; }
+#footer { height: 80px; width: 100%; background-color: #f5f5f5; position: absolute; bottom: 0px; z-index: 1; color: #00978f; }
+#coffe-footer { -moz-transform: scaleX(-1); -o-transform: scaleX(-1); -webkit-transform: scaleX(-1); transform: scaleX(-1); filter: FlipH; -ms-filter: 'FlipH'; font-size: 22px; }
+#toti-footer { height: 100px; width: 74px; position: absolute; bottom: -70px; right: 140px }
+
+.points-enem-ball { height: 140px; width: 140px; border: 3px solid #0f6e8c; border-radius: 50%; padding-top: 30px; margin: auto }
+
+#lesson-plan-resources a {display: none}
+#createExercise a {display: none}
+
+#myVideo-error { margin: auto; width: 400px; height: 240px; background-color: black; display: none; padding-top: 80px; padding-left: 120px; color: white }
+#myVideo-browser { margin: auto; width: 400px; height: 240px; background-color: black; display: none; padding-top: 80px; padding-left: 40px; color: white }
+#myVideo-browser img {margin-left: 120px; margin-bottom: 10px}
+#myVideo-browser a { color: white; }
+#myVideo-browser a:hover { color: lightgrey; }
+
+.vjs-icon-device-perm:before { content: '\f011' !important; font-family: FontAwesome !important; }
+.vjs-device-button.vjs-control:after { content: 'clique aqui para ligar a sua câmera' !important; font-size: 0.5em }
+.vjs-control-content { margin-top: 70px }
+.vjs-device-button.vjs-control { top: 45% !important; background-color: transparent !important; -webkit-box-shadow: none !important; -moz-box-shadow: none !important; box-shadow: none !important; }
+
+.vjs-record-button.vjs-control { width: 25% !important; color: red !important; }
+.vjs-fullscreen-control.vjs-control { width: 25% !important; }
+.vjs-icon-record-stop.vjs-control { color: white !important; }
+
+.vjs-current-time.vjs-control { width: 20% !important; text-align: right !important; }
+.vjs-time-divider.vjs-control { width: 10% !important; }
+.vjs-duration.vjs-control { width: 20% !important; text-align: left }
+
+.vjs-fullscreen-control.vjs-control:before { text-align: right !important; margin-right: 10px }
+
+.vjs-icon-record-start.vjs-control:before { text-align: left !important; margin-left: 10px }
+.vjs-icon-record-start .vjs-control-text { position: static !important; }
+.vjs-icon-record-start .vjs-control-content { margin-top: 8px }
+
+.video-js .vjs-icon-record-stop.vjs-control:before { text-align: left !important; margin-left: 10px }
+.vjs-icon-record-stop .vjs-control-text { position: static !important; }
+.vjs-icon-record-stop .vjs-control-content { margin-top: 8px }
+
+@media screen and (max-width: 660px) {
+    .resourceContainer ul li{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 661px) {
+    .resourceContainer{
+        width: 100%;
+        max-width: 960px;
+        margin: 0 auto;
+        background-color: #CCCCCC;
+        padding: 20px 25px 20px 0;
+        border-radius: 5px;
+        border-bottom: 3px solid #666666;
+    }
+    .resourceContainer i{
+      font-size: 2em;
+    }
+}
+
+.Curriculum{
+    width: 100px;
+    margin: 0 auto;
+    clear: both;
+}
+
+@media screen and (max-width: 500px){
+    .actionButton{
+        width: 45px;
+    }
+}
+
+.ranking-line{
+    height: 50px;
+}
+
+@media screen and (max-width: 410px){
+    .ranking-line{
+        height: 130px;
+    }
+}
+
+.ranking-line div{
+    float:left;
+}
+
+@media screen and (max-width: 450px){
+  #tuorStudentImg{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1520px){
+  .assessment-mainCard label{
+    margin-left: 30px;
+  }
+  .assessment-mainCard label h3{
+    font-size: 12pt;
+  }
+}
+
+@media screen and (max-width: 360px){
+  #classRoom-teacher-explanation-cards{
+    padding: 0;
+    width: 100%;
+  }
+  #classRoom-teacher-explanation-cards div div{
+    padding: 10px;
+    width: 100%;
+  }
+  .assessment-mainCard label{
+    margin-left: 0px;
+  }
+  .assessment-mainCard label h3{
+    font-size: 14pt;
+    margin-top: 0;
+  }
+  #dashboard-teacher-aluno-gamification div.well{
+    height: 69%;
+  }
+}
+
+@media screen and (min-width: 361px) and (max-width: 768px){
+  #dashboard-teacher-aluno-gamification div.well{
+    height: 450px;
+  }
+  #classRoom-teacher-explanation-cards{
+    padding: 0;
+    width: 100%;
+  }
+  #classRoom-teacher-explanation-cards div div{
+    padding: 10px;
+    width: 100%;
+  }
+  .assessment-mainCard label{
+    margin-left: 0px;
+  }
+  .assessment-mainCard label h3{
+    font-size: 14pt;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 986px){
+  #dashboard-teacher-aluno-assessment-highchart{
+    height: 700px;
+    padding-bottom: -20%;
+  }
+  #dashboard-teacher-aluno-assessment-highchart div.well.well-sm{
+    height: 100% !important;
+  }
+  #dashboard-teacher-aluno-assessment-highchart div.well.well-sm div.col-md-9{
+    position: absolute;
+    margin-left: 80px;
+    margin-top: -40px;
+  }
+}
+
+@media screen and (min-width: 840px) and (max-width: 1199px){
+  #dashboard-teacher-aluno-gamification div.well div.tab-content img{
+    height: 200px;
+  }
+}
+
+
+@media screen and (min-width: 360px) and (max-width: 639px){
+  .widthTree_33{
+    width: 100%;
+  }
+    #tree .widthTree_33{
+        width: 33%;
+    }
+}
+
+div.clearfix.resourceContainer h4{
+  font-size: 14px;
+}
+
+/* #list-chat-user div:first-child, #list-chat-teacher div div:nth-child(2){
+  z-index: 999;
+} */
+
+#boxToChat{
+  display: none;
+}
+
+#list-chat-user{
+  min-height: 300px;
+}
+
+/*Removendo temproariamente*/
+
+#formLogin #social_container, #formLogin .separator{
+    display: none;
+}
+
+/* @media screen and (max-width: 640px){
+  #bs-example-navbar-collapse-1 ul li:nth-child(2){
+    margin-top: -40px;
+    padding-left: 20px;
+  }
+} */
+
+@media screen and (max-width: 640px){
+  #bs-example-navbar-collapse-1 ul li ul li:nth-child(2){
+    margin-top: 0px;
+  }
+
+  #student-assessment-details-submit input {
+    width: 100%;
+  }
+}
+
+
+/* não ta pegando ainda */
+@media screen and (max-width: 468px) {
+  #classRoom-teacher-exercise div:nth-child(1){
+    -webkit-margin-before: 250px;
+  }
+}
+
+
+.popover[class*="tour-"] .popover-navigation button{
+  font-size: 12pt;
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+  background-color: #00978f;
+}
+
+.center {
+  padding-left: 45%;
+}
+
+@media screen and (max-width: 767px){
+  .li-disciplines{
+    margin-left: 80px;
+  }
+  .icon-mobile{
+    display: inline;
+  }
+  #student-baseview-profile{
+    display: none;
+  }
+  #hr-icons-menu-mobile{
+    width: 110%;
+    text-align: center;
+    margin-bottom: -20px;
+  }
+  #mensagem-topnavbar{
+    margin-right: 87px !important;
+  }
+  #btn-sugestao{
+    margin-right: 127px !important; 
+  }
+}
+
+
+@media screen and (min-width: 768px){
+  .icon-mobile{
+    display: none;
+  }
+  #hr-icons-menu-mobile{
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 982px) {
+  #menu-icons{
+    margin-top: -6%;
+    margin-right: -8%;
+    float: right;
+    padding-bottom: 5px;
+  }
+}
+
+@media screen and (min-width: 983px) and (max-width: 1196px) {
+  #menu-icons{
+    float: right;
+  }
+  #student-baseview-profile{
+    padding-bottom: 5px;
+    margin-right: -50px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 1197px) {
+  #menu-icons{
+    float: right;
+    margin-right: -5%;
+  }
+}
+
+
+.table thead tr th {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.table-title {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 16px;
+}
