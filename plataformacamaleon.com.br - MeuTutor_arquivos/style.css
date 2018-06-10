@@ -1,0 +1,26 @@
+#sidebar-wrapper .sidebar-nav { padding: 15px }
+
+.demo-card-square.mdl-card {
+  width: 320px;
+  height: 320px;
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+  background:
+    url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;
+}
+.mdl-card__supporting-text{
+	overflow: unset;
+}
+.tutor-title{
+	width: 100%;
+	  color: #fff;
+  background:
+    url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;
+}
+.titulo-secao{
+  display: block;
+}
+.imagem-tutor{
+
+}
