@@ -635,47 +635,96 @@
             <div class="mdl-card__supporting-text" style="width:100%;">
                 <div class="container" style="margin-top: 10px; margin-bottom: 10px;">
                     <ul class="progressbar">
-                        <li class="active"><strong>Início</strong></li>
-                        <li>Domínio</li>
-                        <li>Modelo Pedagógico</li>
-                        <li>Modelo de Gamificação</li>
-                        <li>Modelo de Avaliação</li>
+                        <li class="active">Início</li>
+                        <li class="active">Domínio</li>
+                        <li class="active">Modelo Pedagógico</li>
+                        <li class="active">Modelo de Gamificação</li>
+                        <li class="active"><strong>Modelo de Avaliação</strong></li>
                         <li>Modelo de Relatório</li>
                     </ul>
                 </div>
             </div>
             <div class="mdl-card__actions mdl-card--border">
                 <div>
-            <h4 style="text-align: center;">Você pode começar selecionando um modelo de tutor ou criando um novo tutor.</h4>
+            <h4 style="text-align: center;">Estamos quase terminando de configurar o seu sistema na forma passo a passo!</h4>
+            <h4 style="text-align: center; margin-top: 20px" >Você também pode selecionar quais estratégias avaliativas você poderia fornecer aos seus alunos.</h4>
   <link rel="stylesheet" type="text/css" href="angular-material.css">
   <link rel="stylesheet" type="text/css" href="plataformacamaleon.com.br - MeuTutor_arquivos/invision.css">
 
-
-
-
-
-
-
-      <div layout="row" layout-align="space-around center" layout-padding="" layout-margin="" class="layout-margin layout-padding layout-align-space-around-center layout-row">
-
-      	<md-card flex="30" layout="column" layout-align="center center" layout-padding="" layout-margin=""  class="layout-margin layout-padding layout-align-center-center layout-column flex-30" role="button" tabindex="0">
-      		<div>
-      			<img layout-align="center center"  class="layout-align-center-center" src="images/scratch.png">
-      			</div>
-      			<h4><strong>Configure um sistema educacional adaptativo a partir do zero</strong></h4>
-      			<label style="text-align:justify; font-weight: 500;">Configure um novo sistema educacional adaptativo passo a passo e descubra todos os recursos que nós trazemos para você!</label>
-      		</md-card>
-      		<md-card flex="30" layout="column" layout-align="center center" layout-padding="" layout-margin=""  class="layout-margin layout-padding layout-align-center-center layout-column flex-30" role="button" tabindex="0">
-      			<div>
-      				<img  src="images/template.png">
-      				</div>
-      				<h4><strong>Usando um modelo</strong></h4>
-      				<label style="text-align:justify; font-weight: 500;">Economize tempo selecionado um sistema educacional adaptativo já configurado para uso! Mas, sinta-se livre para modificar qualquer coisa que você precisar.</label>
-      			</md-card>
-      		</div>
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" style="margin-bottom:  5px; float:  right; margin-right:  5px;">
-          Descartar
-          </button>
+            <div layout="column" layout-align="left left">
+                <md-card layout-padding layout-margin>
+                    <md-card-title>
+                        <md-card-title-media>
+                            <md-icon class="md-media-lg card-media" md-svg-src="define_evaluation_methods/quick_test.svg" aria-label="Quick Test" layout-align="center center"></md-icon>
+                        </md-card-title-media>
+                        <span flex="5"></span>
+                        <md-card-title-text>
+                            <span class="md-headline">Teste Rápido</span>
+                            <span class="md-title">Ative esse recurso se deseja fornecer um teste rápido para que seus alunos avaliem a aprendizagem ao utilizarem o sistema educacional adaptativo. Este teste pode ser gerado automaticamente pelo sistema sempre que um estudante quiser testar seu conhecimento atual.</span>
+                        </md-card-title-text>
+                        <span flex="5"></span>
+                        <md-card-title-media>
+                            <div layout-align="center center">
+                                <br/>
+                                <br/>
+                                <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+                                    <input type="checkbox" id="switch-1" class="mdl-switch__input">
+                                    <span class="mdl-switch__label"></span>
+                                  </label>
+                            </div>
+                        </md-card-title-media>
+                    </md-card-title>
+                </md-card>
+                <md-card layout-padding layout-margin>
+                    <md-card-title>
+                        <md-card-title-media>
+                            <md-icon class="md-media-lg card-media" md-svg-src="define_evaluation_methods/custom_test.svg" aria-label="Custom Test" layout-align="center center"></md-icon>
+                        </md-card-title-media>
+                        <span flex="5"></span>
+                        <md-card-title-text>
+                            <span class="md-headline">Teste Personalizado</span>
+                            <span class="md-title">Ative esse recurso se deseja fornecer um teste personalizado para os seus alunos avaliarem seus níveis de aprendizagem no sistema educacional adaptativo. Neste teste, o aluno será capaz de selecionar quais assuntos ele deseja testar.</span>
+                        </md-card-title-text>
+                        <span flex="5"></span>
+                        <md-card-title-media>
+                            <div layout-align="center center">
+                                <br/>
+                                <br/>
+                                <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-2">
+                                    <input type="checkbox" id="switch-2" class="mdl-switch__input">
+                                    <span class="mdl-switch__label"></span>
+                                  </label>
+                            </div>
+                        </md-card-title-media>
+                    </md-card-title>
+                </md-card>
+                <md-card layout-padding layout-margin>
+                    <md-card-title>
+                        <md-card-title-media>
+                            <md-icon class="md-media-lg card-media" md-svg-src="define_evaluation_methods/placement_test.svg" aria-label="Placement Test" layout-align="center center"></md-icon>
+                        </md-card-title-media>
+                        <span flex="5"></span>
+                        <md-card-title-text>
+                            <span class="md-headline">Teste de Colocação</span>
+                            <span class="md-title">Ative esse recurso se deseja permitir que seus alunos avaliem assuntos mais avançados que ainda não foram estudados. Se o aluno for aprovado no teste, ele terá seu nível de conhecimento atualizado para incluir o aprendizado sobre os assuntos avaliados.</span>
+                        </md-card-title-text>
+                        <span flex="5"></span>
+                        <md-card-title-media>
+                            <div layout-align="center center">
+                                <br/>
+                                <br/>
+                                <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-3">
+                                    <input type="checkbox" id="switch-3" class="mdl-switch__input">
+                                    <span class="mdl-switch__label"></span>
+                                  </label>
+                            </div>
+                        </md-card-title-media>
+                    </md-card-title>
+                </md-card>
+            </div>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" style="margin-bottom:  5px; float:  right; margin-right:  5px;">
+                Descartar
+            </button>
          
 
 
