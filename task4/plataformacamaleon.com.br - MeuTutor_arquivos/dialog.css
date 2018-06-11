@@ -1,0 +1,64 @@
+.btn2 {
+    background-color: #4caf50;
+    height: 40px;
+    color: #ecf0f1;
+    font-family: roboto-l;
+    font-size: 16pt;
+}
+
+.forgot {
+    color: #4c4d4f;
+    font-family: roboto-t;
+    font-size: 12pt;
+    font-style: italic;
+    text-align: center;
+    text-decoration: none;
+}
+
+.register1 {
+    color: #ffffff;
+    font-family: roboto-t;
+    font-size: 12pt;
+    font-style: italic;
+}
+
+.register2 {
+    color: #0000ff;
+    font-family: roboto;
+    font-size: 12pt;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.global {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.content {
+    background-color: white;
+    box-shadow: 0px 10px 40px #4c4d4f;
+}
+
+.input {
+    height: 35px;
+    margin:8px;
+}
+
+.checkbox{
+    margin-top: 0;
+    padding-left: 50px;
+}
+
+.hfixed{
+    height: 600px;
+    overflow: scroll;
+}
+
+.light-bg{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.fixed-width{
+    width: 350px;
+}
