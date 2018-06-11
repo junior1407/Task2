@@ -1187,12 +1187,12 @@ h6,
 .h3,
 .h4,
 .h5,
-.h6 {
+/*.h6 {
   font-family: Lato;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
-}
+}*/
 h1 small,
 h2 small,
 h3 small,
@@ -2502,7 +2502,7 @@ label {
   display: inline-block;
   max-width: 100%;
   margin-bottom: 5px;
-  font-weight: bold;
+  /*font-weight: ;*/
 }
 input[type="search"] {
   -webkit-box-sizing: border-box;
@@ -6809,9 +6809,9 @@ md-toolbar {
     height: 180px;
 }
 
-label {
+/*label {
     font-family: roboto;
-}
+}*/
 
 md-button{
     color: white;
