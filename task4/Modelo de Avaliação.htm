@@ -644,7 +644,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="mdl-card__actions mdl-card--border">
+            <div class="mdl-card__actions mdl-card--border" style="overflow:scroll;height:630px;width:100%;overflow:auto">
                 <div>
             <h4 style="text-align: center;">Estamos quase terminando de configurar o seu sistema na forma passo a passo!</h4>
             <h4 style="text-align: center; margin-top: 20px" >Você também pode selecionar quais estratégias avaliativas você poderia fornecer aos seus alunos.</h4>
@@ -737,14 +737,7 @@
 
           <!--  <div layout="row" layout-padding="" layout-margin="" flex="" ng-if="getVersion()=='scratch'" class="layout-margin layout-padding ng-scope layout-row flex">!-->
 
-          <md-divider style="border-top-color: rgba(0,0,0,0.12); margin-left: 10px;margin-right: 10px;margin-bottom: 10px;">
-          </md-divider>
-              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="margin-bottom:  5px; float:  right; margin-right:  5px; background-color: rgb(1,49,97);">
-                  Continuar
-              </button>
-              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" style="margin-bottom:  5px; float:  right; margin-right:  10px;">
-                  Voltar
-              </button>
+          
 
 
 
@@ -766,6 +759,16 @@
 
                   </div>
             </div>
+            <div>
+                    <md-divider style="border-top-color: rgba(0,0,0,0.12); margin-left: 10px;margin-right: 20px;margin-bottom: 10px; margin-top: 5px;">
+                        </md-divider>
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="margin-bottom:  10px; float:  right; margin-right:  10px; background-color: rgb(1,49,97);" data-upgraded=",MaterialButton,MaterialRipple">
+                        Continuar
+                    <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" style="margin-bottom:  5px; float:  right; margin-right:  10px;" data-upgraded=",MaterialButton,MaterialRipple">
+                        Voltar
+                    <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+                 </div>
         </div>
 
         <div id="teacher-tree-main-bread-crumb" class="col-md-12 col-lg-12 hidden-ms hidden-xs" style="display: block;">
