@@ -693,19 +693,284 @@
         </md-divider>
 
           <div id="1" class="disabledd">
-              CONTENT1
+            <div layout="column" layout-padding="" class="layout-padding layout-column">
+        <span><b class="ng-binding">Ensino Fundamental</b></span>
+        <span class="ng-binding"></span>
+        <span><b>Selecionando o ícone relativo ao nível educacional da sua turma o seu sistema já estará pré-configurado com os recursos descritos abaixo:</b></span>
+        <div layout="row" class="layout-row">
+            <div class="fixed-width layout-padding layout-align-end-end layout-row" layout="row" layout-align="end end" layout-padding="">
+                <img src="assets/icons/curriculum.png" class="huge">
+                <img src="assets/icons/syllabus.png" class="huge" ng-class="{disabled: !getLevel().pedagogic.syllabus.active}">
+            </div>
+            <div layout="column" layout-padding="" class="layout-padding layout-column">
+                <span><b>- Modelo Pedagógico:</b> </span>
+                <div>
+                    <span class="ng-binding">Seu Sistema Educacional Adaptativo personalizado faz uso de técnicas inteligentes robustas que modelam o conhecimento do aluno para decidir com precisão quais conteúdos e problemas devem ser fornecidos aos alunos no processo de aprendizagem.</span>
+                </div>
+                <div ng-show="getLevel().pedagogic.syllabus.active" aria-hidden="false" class="">
+                    <span class="ng-binding"><b class="ng-binding">Programa de Estudos:</b>  O recurso de Programa de Estudos permite que você gerencie o cronograma e os assuntos sobre os quais os alunos aprenderão usando o sistema educacional adaptativo.</span>
+                </div>
+            </div>
+        </div>
+        <div layout="row" layout-align="start center" class="layout-align-start-center layout-row">
+            <div class="fixed-width layout-padding layout-align-end-end layout-row" layout="row" layout-align="end end" layout-padding="">
+                <img src="assets/icons/quick.png" class="huge" ng-class="{disabled: (!getLevel().evaluation.quick.active)}">
+                <img src="assets/icons/custom.png" class="huge disabled" ng-class="{disabled: (!getLevel().evaluation.custom.active)}">
+                <img src="assets/icons/placement.png" class="huge disabled" ng-class="{disabled: !getLevel().evaluation.placement.active}">
+            </div>
+            <div layout="column" layout-padding="" class="layout-padding layout-column">
+                <span><b>- Métodos Avaliativos:</b> </span>
+                <div ng-show="getLevel().evaluation.quick.active" aria-hidden="false" class="">
+                    <span class="ng-binding"><b class="ng-binding">Teste rápido:</b> fornece um teste rápido para que seus alunos avaliem a aprendizagem ao utilizarem o sistema educacional adaptativo. Este teste pode ser gerado automaticamente pelo sistema sempre que um estudante quiser testar seu conhecimento atual.</span>
+                </div>
+                <div ng-show="getLevel().evaluation.custom.active" aria-hidden="true" class="ng-hide">
+                    <span class="ng-binding"><b class="ng-binding">: </b> </span>
+                </div>
+                <div ng-show="getLevel().evaluation.placement.active" aria-hidden="true" class="ng-hide">
+                    <span class="ng-binding"><b class="ng-binding">: </b> </span>
+                </div>
+            </div>
+        </div>
+        <div layout="row" class="layout-row">
+            <div class="fixed-width layout-padding layout-align-end-end layout-row" layout="row" layout-align="end end" layout-padding="">
+                <img src="assets/icons/student.png" class="huge disabled" ng-class="{disabled: !getLevel().report.student.active}">
+                <img src="assets/icons/teacher.png" class="huge" ng-class="{disabled: !getLevel().report.teacher.active}">
+            </div>
+            <div layout="column" layout-padding="" class="layout-padding layout-column">
+                <span><b>- Relatórios:</b> </span>
+                <div ng-show="getLevel().report.student.active" aria-hidden="true" class="ng-hide">
+                    <span class="ng-binding"><b class="ng-binding">Relatórios do Estudante: </b> </span>
+                </div>
+                <div ng-show="getLevel().report.teacher.active" aria-hidden="false" class="">
+                    <span class="ng-binding"><b class="ng-binding">Relatórios do Professor: </b> você será capaz de visualizar relatórios sobre a interação, o desempenho de aprendizagem e outros relatórios interessantes sobre os seus alunos no sistema educacional adaptativo.</span>
+                </div>
+            </div>
+        </div>
+    </div>
           </div>
           <div id="2" class="disabledd" >
-              CONTENT2
+            <div layout="column" layout-padding="" class="layout-padding layout-column">
+      <span><b class="ng-binding">Ensino Médio</b></span>
+      <span class="ng-binding"></span>
+      <span><b>Selecionando o ícone relativo ao nível educacional da sua turma o seu sistema já estará pré-configurado com os recursos descritos abaixo:</b></span>
+      <div layout="row" class="layout-row">
+          <div class="fixed-width layout-padding layout-align-end-end layout-row" layout="row" layout-align="end end" layout-padding="">
+              <img src="assets/icons/curriculum.png" class="huge">
+              <img src="assets/icons/syllabus.png" class="huge" ng-class="{disabled: !getLevel().pedagogic.syllabus.active}">
+          </div>
+          <div layout="column" layout-padding="" class="layout-padding layout-column">
+              <span><b>- Modelo Pedagógico:</b> </span>
+              <div>
+                  <span class="ng-binding">Seu Sistema Educacional Adaptativo personalizado faz uso de técnicas inteligentes robustas que modelam o conhecimento do aluno para decidir com precisão quais conteúdos e problemas devem ser fornecidos aos alunos no processo de aprendizagem.</span>
+              </div>
+              <div ng-show="getLevel().pedagogic.syllabus.active" aria-hidden="false" class="">
+                  <span class="ng-binding"><b class="ng-binding">Programa de Estudos:</b>  O recurso de Programa de Estudos permite que você gerencie o cronograma e os assuntos sobre os quais os alunos aprenderão usando o sistema educacional adaptativo.</span>
+              </div>
+          </div>
+      </div>
+      <div layout="row" layout-align="start center" class="layout-align-start-center layout-row">
+          <div class="fixed-width layout-padding layout-align-end-end layout-row" layout="row" layout-align="end end" layout-padding="">
+              <img src="assets/icons/quick.png" class="huge" ng-class="{disabled: (!getLevel().evaluation.quick.active)}">
+              <img src="assets/icons/custom.png" class="huge" ng-class="{disabled: (!getLevel().evaluation.custom.active)}" style="">
+              <img src="assets/icons/placement.png" class="huge disabled" ng-class="{disabled: !getLevel().evaluation.placement.active}">
+          </div>
+          <div layout="column" layout-padding="" class="layout-padding layout-column">
+              <span><b>- Métodos Avaliativos:</b> </span>
+              <div ng-show="getLevel().evaluation.quick.active" aria-hidden="false" class="">
+                  <span class="ng-binding"><b class="ng-binding">Teste rápido:</b> fornece um teste rápido para que seus alunos avaliem a aprendizagem ao utilizarem o sistema educacional adaptativo. Este teste pode ser gerado automaticamente pelo sistema sempre que um estudante quiser testar seu conhecimento atual.</span>
+              </div>
+              <div ng-show="getLevel().evaluation.custom.active" aria-hidden="false" class="" style="">
+                  <span class="ng-binding"><b class="ng-binding">Teste customizado: </b> fornece um teste personalizado para os seus alunos avaliarem seus níveis de aprendizagem no sistema educacional adaptativo. Neste teste, o aluno será capaz de selecionar quais os assuntos ele deseja testar.</span>
+              </div>
+              <div ng-show="getLevel().evaluation.placement.active" aria-hidden="true" class="ng-hide">
+                  <span class="ng-binding"><b class="ng-binding">: </b> </span>
+              </div>
+          </div>
+      </div>
+      <div layout="row" class="layout-row">
+          <div class="fixed-width layout-padding layout-align-end-end layout-row" layout="row" layout-align="end end" layout-padding="">
+              <img src="assets/icons/student.png" class="huge" ng-class="{disabled: !getLevel().report.student.active}" style="">
+              <img src="assets/icons/teacher.png" class="huge" ng-class="{disabled: !getLevel().report.teacher.active}">
+          </div>
+          <div layout="column" layout-padding="" class="layout-padding layout-column">
+              <span><b>- Relatórios:</b> </span>
+              <div ng-show="getLevel().report.student.active" aria-hidden="false" class="" style="">
+                  <span class="ng-binding"><b class="ng-binding">Relatórios do Aluno: </b> permite que seus alunos visualizem alguns relatórios sobre o próprio desempenho nos conteúdos. Estes relatórios incluem informações sobre o desempenho da aprendizagem no conteúdo geral ou sobre temas específicos, bem como o histórico de testes.</span>
+              </div>
+              <div ng-show="getLevel().report.teacher.active" aria-hidden="false" class="">
+                  <span class="ng-binding"><b class="ng-binding">Relatórios do Professor: </b> você será capaz de visualizar relatórios sobre a interação, o desempenho de aprendizagem e outros relatórios interessantes sobre os seus alunos no sistema educacional adaptativo.</span>
+              </div>
+          </div>
+      </div>
+  </div>
           </div>
           <div id="3" class="disabledd">
-              CONTENT3
+            <div layout="column" layout-padding="" class="layout-padding layout-column">
+        <span><b class="ng-binding">Faculdade/Universidade</b></span>
+        <span class="ng-binding"></span>
+        <span><b>Selecionando o ícone relativo ao nível educacional da sua turma o seu sistema já estará pré-configurado com os recursos descritos abaixo:</b></span>
+        <div layout="row" class="layout-row">
+            <div class="fixed-width layout-padding layout-align-end-end layout-row" layout="row" layout-align="end end" layout-padding="">
+                <img src="assets/icons/curriculum.png" class="huge">
+                <img src="assets/icons/syllabus.png" class="huge disabled" ng-class="{disabled: !getLevel().pedagogic.syllabus.active}" style="">
+            </div>
+            <div layout="column" layout-padding="" class="layout-padding layout-column">
+                <span><b>- Modelo Pedagógico:</b> </span>
+                <div>
+                    <span class="ng-binding">Seu Sistema Educacional Adaptativo personalizado faz uso de técnicas inteligentes robustas que modelam o conhecimento do aluno para decidir com precisão quais conteúdos e problemas devem ser fornecidos aos alunos no processo de aprendizagem.</span>
+                </div>
+                <div ng-show="getLevel().pedagogic.syllabus.active" aria-hidden="true" class="ng-hide" style="">
+                    <span class="ng-binding"><b class="ng-binding">Programa de Estudos:</b>  O recurso de Programa de Estudos permite que você gerencie o cronograma e os assuntos sobre os quais os alunos aprenderão usando o sistema educacional adaptativo.</span>
+                </div>
+            </div>
+        </div>
+        <div layout="row" layout-align="start center" class="layout-align-start-center layout-row">
+            <div class="fixed-width layout-padding layout-align-end-end layout-row" layout="row" layout-align="end end" layout-padding="">
+                <img src="assets/icons/quick.png" class="huge" ng-class="{disabled: (!getLevel().evaluation.quick.active)}">
+                <img src="assets/icons/custom.png" class="huge" ng-class="{disabled: (!getLevel().evaluation.custom.active)}" style="">
+                <img src="assets/icons/placement.png" class="huge disabled" ng-class="{disabled: !getLevel().evaluation.placement.active}">
+            </div>
+            <div layout="column" layout-padding="" class="layout-padding layout-column">
+                <span><b>- Métodos Avaliativos:</b> </span>
+                <div ng-show="getLevel().evaluation.quick.active" aria-hidden="false" class="">
+                    <span class="ng-binding"><b class="ng-binding">Teste rápido:</b> fornece um teste rápido para que seus alunos avaliem a aprendizagem ao utilizarem o sistema educacional adaptativo. Este teste pode ser gerado automaticamente pelo sistema sempre que um estudante quiser testar seu conhecimento atual.</span>
+                </div>
+                <div ng-show="getLevel().evaluation.custom.active" aria-hidden="false" class="" style="">
+                    <span class="ng-binding"><b class="ng-binding">Teste customizado: </b> fornece um teste personalizado para os seus alunos avaliarem seus níveis de aprendizagem no sistema educacional adaptativo. Neste teste, o aluno será capaz de selecionar quais os assuntos ele deseja testar.</span>
+                </div>
+                <div ng-show="getLevel().evaluation.placement.active" aria-hidden="true" class="ng-hide">
+                    <span class="ng-binding"><b class="ng-binding">: </b> </span>
+                </div>
+            </div>
+        </div>
+        <div layout="row" class="layout-row">
+            <div class="fixed-width layout-padding layout-align-end-end layout-row" layout="row" layout-align="end end" layout-padding="">
+                <img src="assets/icons/student.png" class="huge" ng-class="{disabled: !getLevel().report.student.active}" style="">
+                <img src="assets/icons/teacher.png" class="huge" ng-class="{disabled: !getLevel().report.teacher.active}">
+            </div>
+            <div layout="column" layout-padding="" class="layout-padding layout-column">
+                <span><b>- Relatórios:</b> </span>
+                <div ng-show="getLevel().report.student.active" aria-hidden="false" class="" style="">
+                    <span class="ng-binding"><b class="ng-binding">Relatórios do Aluno: </b> permite que seus alunos visualizem alguns relatórios sobre o próprio desempenho nos conteúdos. Estes relatórios incluem informações sobre o desempenho da aprendizagem no conteúdo geral ou sobre temas específicos, bem como o histórico de testes.</span>
+                </div>
+                <div ng-show="getLevel().report.teacher.active" aria-hidden="false" class="">
+                    <span class="ng-binding"><b class="ng-binding">Relatórios do Professor: </b> você será capaz de visualizar relatórios sobre a interação, o desempenho de aprendizagem e outros relatórios interessantes sobre os seus alunos no sistema educacional adaptativo.</span>
+                </div>
+            </div>
+        </div>
+    </div>
           </div>
           <div id="4" class="disabledd">
-              CONTENT4
+            <div layout="column" layout-padding="" class="layout-padding layout-column">
+        <span><b class="ng-binding">Preparação para Exames</b></span>
+        <span class="ng-binding"></span>
+        <span><b>Selecionando o ícone relativo ao nível educacional da sua turma o seu sistema já estará pré-configurado com os recursos descritos abaixo:</b></span>
+        <div layout="row" class="layout-row">
+            <div class="fixed-width layout-padding layout-align-end-end layout-row" layout="row" layout-align="end end" layout-padding="">
+                <img src="assets/icons/curriculum.png" class="huge">
+                <img src="assets/icons/syllabus.png" class="huge disabled" ng-class="{disabled: !getLevel().pedagogic.syllabus.active}" style="">
+            </div>
+            <div layout="column" layout-padding="" class="layout-padding layout-column">
+                <span><b>- Modelo Pedagógico:</b> </span>
+                <div>
+                    <span class="ng-binding">Seu Sistema Educacional Adaptativo personalizado faz uso de técnicas inteligentes robustas que modelam o conhecimento do aluno para decidir com precisão quais conteúdos e problemas devem ser fornecidos aos alunos no processo de aprendizagem.</span>
+                </div>
+                <div ng-show="getLevel().pedagogic.syllabus.active" aria-hidden="true" class="ng-hide" style="">
+                    <span class="ng-binding"><b class="ng-binding">Programa de Estudos:</b>  O recurso de Programa de Estudos permite que você gerencie o cronograma e os assuntos sobre os quais os alunos aprenderão usando o sistema educacional adaptativo.</span>
+                </div>
+            </div>
+        </div>
+        <div layout="row" layout-align="start center" class="layout-align-start-center layout-row">
+            <div class="fixed-width layout-padding layout-align-end-end layout-row" layout="row" layout-align="end end" layout-padding="">
+                <img src="assets/icons/quick.png" class="huge" ng-class="{disabled: (!getLevel().evaluation.quick.active)}">
+                <img src="assets/icons/custom.png" class="huge" ng-class="{disabled: (!getLevel().evaluation.custom.active)}" style="">
+                <img src="assets/icons/placement.png" class="huge" ng-class="{disabled: !getLevel().evaluation.placement.active}" style="">
+            </div>
+            <div layout="column" layout-padding="" class="layout-padding layout-column">
+                <span><b>- Métodos Avaliativos:</b> </span>
+                <div ng-show="getLevel().evaluation.quick.active" aria-hidden="false" class="">
+                    <span class="ng-binding"><b class="ng-binding">Teste rápido:</b> fornece um teste rápido para que seus alunos avaliem a aprendizagem ao utilizarem o sistema educacional adaptativo. Este teste pode ser gerado automaticamente pelo sistema sempre que um estudante quiser testar seu conhecimento atual.</span>
+                </div>
+                <div ng-show="getLevel().evaluation.custom.active" aria-hidden="false" class="" style="">
+                    <span class="ng-binding"><b class="ng-binding">Teste customizado: </b> fornece um teste personalizado para os seus alunos avaliarem seus níveis de aprendizagem no sistema educacional adaptativo. Neste teste, o aluno será capaz de selecionar quais os assuntos ele deseja testar.</span>
+                </div>
+                <div ng-show="getLevel().evaluation.placement.active" aria-hidden="false" class="" style="">
+                    <span class="ng-binding"><b class="ng-binding">Teste de Colocação: </b> permite que seus alunos avaliem assuntos mais avançados que ainda não foram estudados. Se o aluno for aprovado no teste, ele terá seu nível de conhecimento atualizado para incluir o aprendizado sobre os assuntos avaliados.</span>
+                </div>
+            </div>
+        </div>
+        <div layout="row" class="layout-row">
+            <div class="fixed-width layout-padding layout-align-end-end layout-row" layout="row" layout-align="end end" layout-padding="">
+                <img src="assets/icons/student.png" class="huge" ng-class="{disabled: !getLevel().report.student.active}" style="">
+                <img src="assets/icons/teacher.png" class="huge" ng-class="{disabled: !getLevel().report.teacher.active}">
+            </div>
+            <div layout="column" layout-padding="" class="layout-padding layout-column">
+                <span><b>- Relatórios:</b> </span>
+                <div ng-show="getLevel().report.student.active" aria-hidden="false" class="" style="">
+                    <span class="ng-binding"><b class="ng-binding">Relatórios do Aluno: </b> permite que seus alunos visualizem alguns relatórios sobre o próprio desempenho nos conteúdos. Estes relatórios incluem informações sobre o desempenho da aprendizagem no conteúdo geral ou sobre temas específicos, bem como o histórico de testes.</span>
+                </div>
+                <div ng-show="getLevel().report.teacher.active" aria-hidden="false" class="">
+                    <span class="ng-binding"><b class="ng-binding">Relatórios do Professor: </b> você será capaz de visualizar relatórios sobre a interação, o desempenho de aprendizagem e outros relatórios interessantes sobre os seus alunos no sistema educacional adaptativo.</span>
+                </div>
+            </div>
+        </div>
+    </div>
           </div>
           <div id="5" class="disabledd" >
-              CONTENT5
+            <div layout="column" layout-padding="" class="layout-padding layout-column">
+      <span><b class="ng-binding">Outro</b></span>
+      <span class="ng-binding"></span>
+      <span><b>Selecionando o ícone relativo ao nível educacional da sua turma o seu sistema já estará pré-configurado com os recursos descritos abaixo:</b></span>
+      <div layout="row" class="layout-row">
+          <div class="fixed-width layout-padding layout-align-end-end layout-row" layout="row" layout-align="end end" layout-padding="">
+              <img src="assets/icons/curriculum.png" class="huge">
+              <img src="assets/icons/syllabus.png" class="huge" ng-class="{disabled: !getLevel().pedagogic.syllabus.active}" style="">
+          </div>
+          <div layout="column" layout-padding="" class="layout-padding layout-column">
+              <span><b>- Modelo Pedagógico:</b> </span>
+              <div>
+                  <span class="ng-binding">Seu Sistema Educacional Adaptativo personalizado faz uso de técnicas inteligentes robustas que modelam o conhecimento do aluno para decidir com precisão quais conteúdos e problemas devem ser fornecidos aos alunos no processo de aprendizagem.</span>
+              </div>
+              <div ng-show="getLevel().pedagogic.syllabus.active" aria-hidden="false" class="" style="">
+                  <span class="ng-binding"><b class="ng-binding">Programa de Estudos:</b>  O recurso de Programa de Estudos permite que você gerencie o cronograma e os assuntos sobre os quais os alunos aprenderão usando o sistema educacional adaptativo.</span>
+              </div>
+          </div>
+      </div>
+      <div layout="row" layout-align="start center" class="layout-align-start-center layout-row">
+          <div class="fixed-width layout-padding layout-align-end-end layout-row" layout="row" layout-align="end end" layout-padding="">
+              <img src="assets/icons/quick.png" class="huge" ng-class="{disabled: (!getLevel().evaluation.quick.active)}">
+              <img src="assets/icons/custom.png" class="huge" ng-class="{disabled: (!getLevel().evaluation.custom.active)}" style="">
+              <img src="assets/icons/placement.png" class="huge" ng-class="{disabled: !getLevel().evaluation.placement.active}" style="">
+          </div>
+          <div layout="column" layout-padding="" class="layout-padding layout-column">
+              <span><b>- Métodos Avaliativos:</b> </span>
+              <div ng-show="getLevel().evaluation.quick.active" aria-hidden="false" class="">
+                  <span class="ng-binding"><b class="ng-binding">Teste rápido:</b> fornece um teste rápido para que seus alunos avaliem a aprendizagem ao utilizarem o sistema educacional adaptativo. Este teste pode ser gerado automaticamente pelo sistema sempre que um estudante quiser testar seu conhecimento atual.</span>
+              </div>
+              <div ng-show="getLevel().evaluation.custom.active" aria-hidden="false" class="" style="">
+                  <span class="ng-binding"><b class="ng-binding">Teste customizado: </b> fornece um teste personalizado para os seus alunos avaliarem seus níveis de aprendizagem no sistema educacional adaptativo. Neste teste, o aluno será capaz de selecionar quais os assuntos ele deseja testar.</span>
+              </div>
+              <div ng-show="getLevel().evaluation.placement.active" aria-hidden="false" class="" style="">
+                  <span class="ng-binding"><b class="ng-binding">Teste de Colocação: </b> permite que seus alunos avaliem assuntos mais avançados que ainda não foram estudados. Se o aluno for aprovado no teste, ele terá seu nível de conhecimento atualizado para incluir o aprendizado sobre os assuntos avaliados.</span>
+              </div>
+          </div>
+      </div>
+      <div layout="row" class="layout-row">
+          <div class="fixed-width layout-padding layout-align-end-end layout-row" layout="row" layout-align="end end" layout-padding="">
+              <img src="assets/icons/student.png" class="huge" ng-class="{disabled: !getLevel().report.student.active}" style="">
+              <img src="assets/icons/teacher.png" class="huge" ng-class="{disabled: !getLevel().report.teacher.active}">
+          </div>
+          <div layout="column" layout-padding="" class="layout-padding layout-column">
+              <span><b>- Relatórios:</b> </span>
+              <div ng-show="getLevel().report.student.active" aria-hidden="false" class="" style="">
+                  <span class="ng-binding"><b class="ng-binding">Relatórios do Aluno: </b> permite que seus alunos visualizem alguns relatórios sobre o próprio desempenho nos conteúdos. Estes relatórios incluem informações sobre o desempenho da aprendizagem no conteúdo geral ou sobre temas específicos, bem como o histórico de testes.</span>
+              </div>
+              <div ng-show="getLevel().report.teacher.active" aria-hidden="false" class="">
+                  <span class="ng-binding"><b class="ng-binding">Relatórios do Professor: </b> você será capaz de visualizar relatórios sobre a interação, o desempenho de aprendizagem e outros relatórios interessantes sobre os seus alunos no sistema educacional adaptativo.</span>
+              </div>
+          </div>
+      </div>
+  </div>
           </div>
           <md-divider style="border-top-color: rgba(0,0,0,0.12); margin-left: 10px;margin-right: 10px;margin-bottom: 10px;">
           </md-divider>
