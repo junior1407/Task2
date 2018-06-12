@@ -584,7 +584,7 @@
                     questões) criados para ela.</h6>
 
                 <ul>
-                                            <li id="42-exercise">
+                                            <li id="42-exerci se">
                             <!--              <a href="/professor/todo-conteudo/402/Química.html">
                 Química<strong class="arrow">&gt;</strong>
               </a>-->
@@ -638,209 +638,126 @@
                         <li class="active">Início</li>
                         <li class="active">Domínio</li>
                         <li class="active">Modelo Pedagógico</li>
-                        <li class="active"><strong>Modelo de Gamificação</strong></li>
-                        <li>Modelo de Avaliação</li>
-                        <li>Modelo de Relatório</li>
+                        <li class="active">Modelo de Gamificação</li>
+                        <li class="active">Modelo de Avaliação</li>
+                        <li class="active">Modelo de Relatório</li>
                     </ul>
                 </div>
             </div>
             <div class="mdl-card__actions mdl-card--border">
                 <div>
-            <h4 style="text-align: center;">Estamos quase terminando de configurar o seu sistema na forma passo a passo!</h4>
-            <h4 style="text-align: center; margin-top: 20px" >Você também pode selecionar quais estratégias avaliativas você poderia fornecer aos seus alunos.</h4>
-  <link rel="stylesheet" type="text/css" href="angular-material.css">
+                  <link rel="stylesheet" type="text/css" href="angular-material.css">
   <link rel="stylesheet" type="text/css" href="plataformacamaleon.com.br - MeuTutor_arquivos/invision.css">
 
             <div layout="column" layout-align="left left" style="margin-top: 8px;margin-right: 8px;margin-bottom: 8px; margin-left: 8px;padding-top: 8px;padding-right: 8px;padding-bottom: 8px;padding-left: 8px;">
 
 
+              <div ng-include="'views/applyTemplate.html'" class="ng-scope" style=""><div ng-controller="ApplyTemplateCtrl" layout="column" layout-align="start center" class="ng-scope layout-align-start-center layout-column">
+                  <label class="title"><b>Matemática para o 9º ano.</b></label>
+                  <label>Ensino Fundamental</label>
+                  <div layout="row" layout-align="space-around center" class="max-width layout-align-space-around-center layout-row">
+                      <md-whiteframe class="md-whiteframe-1dp layout-margin layout-padding layout-align-start-stretch layout-column flex-40" layout="column" layout-align="left" layout-padding="" layout-margin="" flex="40">
+                          <div layout="row" layout-align="left" class="layout-align-start-stretch layout-row">
+                              <img src="images/domain.png">
+                              <div layout="column" layout-align="center left" layout-margin="" class="layout-margin layout-align-center-stretch layout-column">
+                                  <label><b>Conteúdo</b></label>
+                                  <label class="ng-binding">3 Assuntos</label>
+                              </div>
+                          </div>
+                          <div>
+                              <!-- ngRepeat: s in getSubjects() --><div ng-repeat="s in getSubjects()" class="ng-scope">
+                                  <label class="text-small ng-binding">Noções Numéricas e Álgebra</label>
+                                  <md-divider></md-divider>
+                              </div><!-- end ngRepeat: s in getSubjects() --><div ng-repeat="s in getSubjects()" class="ng-scope">
+                                  <label class="text-small ng-binding">Funções</label>
+                                  <md-divider></md-divider>
+                              </div><!-- end ngRepeat: s in getSubjects() --><div ng-repeat="s in getSubjects()" class="ng-scope">
+                                  <label class="text-small ng-binding">Geometria</label>
+                                  <md-divider></md-divider>
+                              </div><!-- end ngRepeat: s in getSubjects() -->
+                          </div>
+                      </md-whiteframe>
+                      <md-divider></md-divider>
+                      <div layout="column" layout-align="left" class="layout-align-start-stretch layout-column">
+                          <div layout="row" class="layout-row">
+                              <div layout="row" layout-align="end end" layout-padding="" class="layout-padding layout-align-end-end layout-row">
+                                  <img src="images/curriculum.png" class="average">
+                                  <img src="images/syllabus.png" ng-class="{disabled: !syllabus()}" class="average disabled">
+                              </div>
+                              <div layout="column" class="layout-column">
+                                  <label><b>- Modelo Pedagógico</b> </label>
+                                  <span><label>Recomendação de Atividades Baseado nos Pontos Fortes e Fracos: Sim</label></span>
+                                  <span><label class="ng-binding">Programa de Estudos: Não</label></span>
+                              </div>
+                          </div>
+                          <div layout="row" class="layout-row">
+                              <div layout="row" layout-align="end end" layout-padding="" class="layout-padding layout-align-end-end layout-row">
+                                  <img src="images/quick.png" ng-class="{disabled: !quick()}" class="average disabled">
+                                  <img src="images/custom.png" ng-class="{disabled: !custom()}" class="average disabled">
+                                  <img src="images/placement.png" ng-class="{disabled: !placement()}" class="average disabled">
+                              </div>
+                              <div layout="column" class="layout-column">
+                                  <label><b>- Métodos Avaliativos</b> </label>
+                                  <span><label class="ng-binding">Teste Rápido: Não</label> </span>
+                                  <span><label class="ng-binding">Teste Personalizado: Não</label></span>
+                                  <span><label class="ng-binding">Teste de Colocação: Não</label></span>
+                              </div>
+                          </div>
+                          <div layout="row" class="layout-row">
+                              <div layout="row" layout-align="end end" layout-padding="" class="layout-padding layout-align-end-end layout-row">
+                                  <img src="images/student.png" ng-class="{disabled: !student()}" class="average disabled">
+                                  <img src="images/teacher.png" ng-class="{disabled: !teacher()}" class="average disabled">
+                              </div>
+                              <div layout="column" class="layout-column">
+                                  <label><b>- Relatórios</b> </label>
+                                  <span><label class="ng-binding">Relatórios dos Estudantes: Não</label></span>
+                                  <span><label class="ng-binding">Relatórios do Professor: Não</label></span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div layout="column" layout-align="start" flex="100" layout-margin="" class="layout-margin layout-align-start-stretch layout-column flex-100">
+                      <label><b class="ng-binding">- Elementos de Gamificação de Participação</b></label>
+                      <div layout="row" class="layout-row">
+                          <!-- ngRepeat: e in getElements() --><div ng-repeat="e in getElements()" layout="column" layout-align="center start" layout-padding="" class="layout-padding ng-scope layout-align-center-start layout-column">
+                              <img src="images/challenges.png" class="average">
 
-              <div layout="column" class="layout-column">
-  <md-card flex="" ng-repeat="c in categories" ng-click="setCategory(c)" ng-class="{selected: checkCategory(c.id)}" class="ng-scope flex" role="button" tabindex="0">
-            <div layout="row" class="layout-row">
-                <div>
-                    <img src="images/participation.png" class="huge largura">
-                </div>
-                <div layout="column" class="layout-column">
-                    <label class="title3 ng-binding">Participação</label>
-                    <span><label style="font-weight: unset !important;" class="ng-binding">Selecione esta opção se você espera que seus alunos sejam participativos em seu curso por meio de interações com o sistema educacional adaptativo. Se você habilitar este comportamento, os seguintes elementos de jogo serão ativados no sistema: </label><b class="ng-binding"> Desafios, Níveis, Ranking, História, Troféu, Recompensas, Pontos</b></span>
-                </div>
-            </div>
-            <div layout="column" class="layout-column">
-                <md-divider style="border-top-color: rgba(0,0,0,0.12); margin-left: 10px;margin-right: 10px;margin-bottom: 10px;">
-            	</md-divider>
-                <div layout="row" flex="" class="layout-row flex">
-                    <!-- ngRepeat: e in c.elements --><div ng-repeat="e in c.elements" class="ng-scope">
-                        <img src="images/challenges.png" class="small layout-padding" ng-click="loadElement(e); setCategory(c)" layout-padding="" role="button" tabindex="0">
-                    </div><!-- end ngRepeat: e in c.elements --><div ng-repeat="e in c.elements" class="ng-scope">
-                        <img src="images/levels.png" class="small layout-padding" ng-click="loadElement(e); setCategory(c)" layout-padding="" role="button" tabindex="0">
-                    </div><!-- end ngRepeat: e in c.elements --><div ng-repeat="e in c.elements" class="ng-scope">
-                        <img src="images/leaderboard.png" class="small layout-padding" ng-click="loadElement(e); setCategory(c)" layout-padding="" role="button" tabindex="0">
-                    </div><!-- end ngRepeat: e in c.elements --><div ng-repeat="e in c.elements" class="ng-scope">
-                        <img src="images/story.png" class="small layout-padding" ng-click="loadElement(e); setCategory(c)" layout-padding="" role="button" tabindex="0">
-                    </div><!-- end ngRepeat: e in c.elements --><div ng-repeat="e in c.elements" class="ng-scope">
-                        <img src="images/badge.png" class="small layout-padding" ng-click="loadElement(e); setCategory(c)" layout-padding="" role="button" tabindex="0">
-                    </div><!-- end ngRepeat: e in c.elements --><div ng-repeat="e in c.elements" class="ng-scope">
-                        <img src="images/rewards.png" class="small layout-padding" ng-click="loadElement(e); setCategory(c)" layout-padding="" role="button" tabindex="0">
-                    </div><!-- end ngRepeat: e in c.elements --><div ng-repeat="e in c.elements" class="ng-scope">
-                        <img src="images/points.png" class="small layout-padding" ng-click="loadElement(e); setCategory(c)" layout-padding="" role="button" tabindex="0">
-                    </div><!-- end ngRepeat: e in c.elements -->
-                </div>
-                <md-divider style="border-top-color: rgba(0,0,0,0.12); margin-left: 10px;margin-right: 10px;margin-bottom: 10px;">
-            	</md-divider>
+                              <label class="ng-binding">Desafios</label>
+                          </div><!-- end ngRepeat: e in getElements() --><div ng-repeat="e in getElements()" layout="column" layout-align="center start" layout-padding="" class="layout-padding ng-scope layout-align-center-start layout-column">
+                              <img src="images/levels.png" class="average">
 
-            </div>
-        </md-card><!-- end ngRepeat: c in categories --><md-card flex="" ng-repeat="c in categories" ng-click="setCategory(c)" ng-class="{selected: checkCategory(c.id)}" class="ng-scope flex" role="button" tabindex="0">
-            <div layout="row" class="layout-row">
-                <div>
-                    <img src="images/performance.png" class="huge largura">
-                </div>
-                <div layout="column" class="layout-column">
-                    <label class="title3 ng-binding">Desempenho</label>
-                    <span><label style="font-weight: unset !important;" class="ng-binding">Selecione esta opção se você espera que seus alunos se concentrem principalmente em seu desempenho de aprendizagem por meio do sistema educacional adaptativo. Se você habilitar este comportamento, os seguintes elementos de jogo serão ativados no sistema: </label><b class="ng-binding"> História, Feedback, Recompensas, Troféu, Desafios, Ranking, Pontos, Níveis</b></span>
-                </div>
-            </div>
-            <div layout="column" class="layout-column">
-                <md-divider style="border-top-color: rgba(0,0,0,0.12); margin-left: 10px;margin-right: 10px;margin-bottom: 10px;">
-            	</md-divider>
-                <div layout="row" flex="" class="layout-row flex">
-                    <!-- ngRepeat: e in c.elements --><div ng-repeat="e in c.elements" class="ng-scope">
-                        <img src="images/story.png" class="small layout-padding" ng-click="loadElement(e); setCategory(c)" layout-padding="" role="button" tabindex="0">
-                    </div><!-- end ngRepeat: e in c.elements --><div ng-repeat="e in c.elements" class="ng-scope">
-                        <img src="images/feedback.png" class="small layout-padding" ng-click="loadElement(e); setCategory(c)" layout-padding="" role="button" tabindex="0">
-                    </div><!-- end ngRepeat: e in c.elements --><div ng-repeat="e in c.elements" class="ng-scope">
-                        <img src="images/rewards.png" class="small layout-padding" ng-click="loadElement(e); setCategory(c)" layout-padding="" role="button" tabindex="0">
-                    </div><!-- end ngRepeat: e in c.elements --><div ng-repeat="e in c.elements" class="ng-scope">
-                        <img src="images/badge.png" class="small layout-padding" ng-click="loadElement(e); setCategory(c)" layout-padding="" role="button" tabindex="0">
-                    </div><!-- end ngRepeat: e in c.elements --><div ng-repeat="e in c.elements" class="ng-scope">
-                        <img src="images/challenges.png" class="small layout-padding" ng-click="loadElement(e); setCategory(c)" layout-padding="" role="button" tabindex="0">
-                    </div><!-- end ngRepeat: e in c.elements --><div ng-repeat="e in c.elements" class="ng-scope">
-                        <img src="images/leaderboard.png" class="small layout-padding" ng-click="loadElement(e); setCategory(c)" layout-padding="" role="button" tabindex="0">
-                    </div><!-- end ngRepeat: e in c.elements --><div ng-repeat="e in c.elements" class="ng-scope">
-                        <img src="images/points.png" class="small layout-padding" ng-click="loadElement(e); setCategory(c)" layout-padding="" role="button" tabindex="0">
-                    </div><!-- end ngRepeat: e in c.elements --><div ng-repeat="e in c.elements" class="ng-scope">
-                        <img src="images/levels.png" class="small layout-padding" ng-click="loadElement(e); setCategory(c)" layout-padding="" role="button" tabindex="0">
-                    </div><!-- end ngRepeat: e in c.elements -->
-                </div>
-                <md-divider style="border-top-color: rgba(0,0,0,0.12); margin-left: 10px;margin-right: 10px;margin-bottom: 10px;">
-            	</md-divider>
+                              <label class="ng-binding">Níveis</label>
+                          </div><!-- end ngRepeat: e in getElements() --><div ng-repeat="e in getElements()" layout="column" layout-align="center start" layout-padding="" class="layout-padding ng-scope layout-align-center-start layout-column">
+                              <img src="images/leaderboard.png" class="average">
 
-            </div>
-        </md-card><!-- end ngRepeat: c in categories --><md-card flex="" ng-repeat="c in categories" ng-click="setCategory(c)" ng-class="{selected: checkCategory(c.id)}" class="ng-scope flex" role="button" tabindex="0">
-            <div layout="row" class="layout-row">
-                <div>
-                    <img src="images/competition.png" class="huge largura">
-                </div>
-                <div layout="column" class="layout-column">
-                    <label class="title3 ng-binding">Competição</label>
-                    <span><label style="font-weight: unset !important;" class="ng-binding">Selecione esta opção se você quer algum tipo de competição entre seus alunos no sistema educacional adaptativo. Se você habilitar este comportamento, os seguintes elementos de jogo serão ativados no sistema: </label><b class="ng-binding"> Ranking, Pontos</b></span>
-                </div>
-            </div>
-            <div layout="column" class="layout-column">
-                <md-divider style="border-top-color: rgba(0,0,0,0.12); margin-left: 10px;margin-right: 10px;margin-bottom: 10px;">
-            	</md-divider>
-                <div layout="row" flex="" class="layout-row flex">
-                    <!-- ngRepeat: e in c.elements --><div ng-repeat="e in c.elements" class="ng-scope">
-                        <img src="images/leaderboard.png" class="small layout-padding" ng-click="loadElement(e); setCategory(c)" layout-padding="" role="button" tabindex="0">
-                    </div><!-- end ngRepeat: e in c.elements --><div ng-repeat="e in c.elements" class="ng-scope">
-                        <img src="images/points.png" class="small layout-padding" ng-click="loadElement(e); setCategory(c)" layout-padding="" role="button" tabindex="0">
-                    </div><!-- end ngRepeat: e in c.elements -->
-                </div>
-                <md-divider style="border-top-color: rgba(0,0,0,0.12); margin-left: 10px;margin-right: 10px;margin-bottom: 10px;">
-            	</md-divider>
+                              <label class="ng-binding">Ranking</label>
+                          </div><!-- end ngRepeat: e in getElements() --><div ng-repeat="e in getElements()" layout="column" layout-align="center start" layout-padding="" class="layout-padding ng-scope layout-align-center-start layout-column">
+                              <img src="images/story.png" class="average">
 
-            </div>
-        </md-card><!-- end ngRepeat: c in categories --><md-card flex="" ng-repeat="c in categories" ng-click="setCategory(c)" ng-class="{selected: checkCategory(c.id)}" class="ng-scope flex" role="button" tabindex="0">
-            <div layout="row" class="layout-row">
-                <div>
-                    <img src="images/enjoyment.png" class="huge largura">
-                </div>
-                <div layout="column" class="layout-column">
-                    <label class="title3 ng-binding">Satisfação</label>
-                    <span><label style="font-weight: unset !important;" class="ng-binding">Selecione esta opção se você espera que seus alunos se divirtam ao utilizarem o sistema educacional adaptativo enquanto estão aprendendo. Se você habilitar este comportamento, os seguintes elementos de jogo serão ativados no sistema: </label><b class="ng-binding"> História, Recompensas, Troféu, Pontos, Avatar, Missões</b></span>
-                </div>
-            </div>
-            <div layout="column" class="layout-column">
-                <md-divider style="border-top-color: rgba(0,0,0,0.12); margin-left: 10px;margin-right: 10px;margin-bottom: 10px;">
-            	</md-divider>
-                <div layout="row" flex="" class="layout-row flex">
-                    <!-- ngRepeat: e in c.elements --><div ng-repeat="e in c.elements" class="ng-scope">
-                        <img src="images/story.png" class="small layout-padding" ng-click="loadElement(e); setCategory(c)" layout-padding="" role="button" tabindex="0">
-                    </div><!-- end ngRepeat: e in c.elements --><div ng-repeat="e in c.elements" class="ng-scope">
-                        <img src="images/rewards.png" class="small layout-padding" ng-click="loadElement(e); setCategory(c)" layout-padding="" role="button" tabindex="0">
-                    </div><!-- end ngRepeat: e in c.elements --><div ng-repeat="e in c.elements" class="ng-scope">
-                        <img src="images/badge.png" class="small layout-padding" ng-click="loadElement(e); setCategory(c)" layout-padding="" role="button" tabindex="0">
-                    </div><!-- end ngRepeat: e in c.elements --><div ng-repeat="e in c.elements" class="ng-scope">
-                        <img src="images/points.png" class="small layout-padding" ng-click="loadElement(e); setCategory(c)" layout-padding="" role="button" tabindex="0">
-                    </div><!-- end ngRepeat: e in c.elements --><div ng-repeat="e in c.elements" class="ng-scope">
-                        <img src="images/avatar.png" class="small layout-padding" ng-click="loadElement(e); setCategory(c)" layout-padding="" role="button" tabindex="0">
-                    </div><!-- end ngRepeat: e in c.elements --><div ng-repeat="e in c.elements" class="ng-scope">
-                        <img src="images/quests.png" class="small layout-padding" ng-click="loadElement(e); setCategory(c)" layout-padding="" role="button" tabindex="0">
-                    </div><!-- end ngRepeat: e in c.elements -->
-                </div>
-                <md-divider style="border-top-color: rgba(0,0,0,0.12); margin-left: 10px;margin-right: 10px;margin-bottom: 10px;">
-            	</md-divider>
+                              <label class="ng-binding">História</label>
+                          </div><!-- end ngRepeat: e in getElements() --><div ng-repeat="e in getElements()" layout="column" layout-align="center start" layout-padding="" class="layout-padding ng-scope layout-align-center-start layout-column">
+                              <img src="images/badge.png" class="average">
 
-            </div>
-        </md-card><!-- end ngRepeat: c in categories --><md-card flex="" ng-repeat="c in categories" ng-click="setCategory(c)" ng-class="{selected: checkCategory(c.id)}" class="ng-scope flex" role="button" tabindex="0">
-            <div layout="row" class="layout-row">
-                <div>
-                    <img src="images/exploration.png" class="huge largura">
-                </div>
-                <div layout="column" class="layout-column">
-                    <label class="title3 ng-binding">Exploração</label>
-                    <span><label style="font-weight: unset !important;" class="ng-binding">Selecione esta opção se você espera reforçar a exploração do sistema educacional adaptativo por seus alunos. Se você habilitar este comportamento, os seguintes elementos de jogo serão ativados no sistema: </label><b class="ng-binding"> Níveis, Desafios, Boss Fights</b></span>
-                </div>
-            </div>
-            <div layout="column" class="layout-column">
-                <md-divider style="border-top-color: rgba(0,0,0,0.12); margin-left: 10px;margin-right: 10px;margin-bottom: 10px;">
-            	</md-divider>
-                <div layout="row" flex="" class="layout-row flex">
-                    <!-- ngRepeat: e in c.elements --><div ng-repeat="e in c.elements" class="ng-scope">
-                        <img src="images/levels.png" class="small layout-padding" ng-click="loadElement(e); setCategory(c)" layout-padding="" role="button" tabindex="0">
-                    </div><!-- end ngRepeat: e in c.elements --><div ng-repeat="e in c.elements" class="ng-scope">
-                        <img src="images/challenges.png" class="small layout-padding" ng-click="loadElement(e); setCategory(c)" layout-padding="" role="button" tabindex="0">
-                    </div><!-- end ngRepeat: e in c.elements --><div ng-repeat="e in c.elements" class="ng-scope">
-                        <img src="images/boss-fight.png" class="small layout-padding" ng-click="loadElement(e); setCategory(c)" layout-padding="" role="button" tabindex="0">
-                    </div><!-- end ngRepeat: e in c.elements -->
-                </div>
-                <md-divider style="border-top-color: rgba(0,0,0,0.12); margin-left: 10px;margin-right: 10px;margin-bottom: 10px;">
-            	</md-divider>
+                              <label class="ng-binding">Troféu</label>
+                          </div><!-- end ngRepeat: e in getElements() --><div ng-repeat="e in getElements()" layout="column" layout-align="center start" layout-padding="" class="layout-padding ng-scope layout-align-center-start layout-column">
+                              <img src="images/rewards.png" class="average">
 
-            </div>
-        </md-card><!-- end ngRepeat: c in categories --><md-card flex="" ng-repeat="c in categories" ng-click="setCategory(c)" ng-class="{selected: checkCategory(c.id)}" class="ng-scope flex" role="button" tabindex="0">
-            <div layout="row" class="layout-row">
-                <div>
-                    <img src="images/effectiveness.png" class="huge largura">
-                </div>
-                <div layout="column" class="layout-column">
-                    <label class="title3 ng-binding">Eficácia</label>
-                    <span><label style="font-weight: unset !important;" class="ng-binding">Selecione esta opção se você espera que seus alunos sejam principalmente eficazes quando estiverem utilizando o sistema educacional adaptativo. Se você habilitar este comportamento, os seguintes elementos de jogo serão ativados no sistema: </label><b class="ng-binding"> Ranking, Troféu, Pontos</b></span>
-                </div>
-            </div>
-            <div layout="column" class="layout-column">
-                <md-divider style="border-top-color: rgba(0,0,0,0.12); margin-left: 10px;margin-right: 10px;margin-bottom: 10px;">
-            	</md-divider>
-                <div layout="row" flex="" class="layout-row flex">
-                    <!-- ngRepeat: e in c.elements --><div ng-repeat="e in c.elements" class="ng-scope">
-                        <img src="images/leaderboard.png" class="small layout-padding" ng-click="loadElement(e); setCategory(c)" layout-padding="" role="button" tabindex="0">
-                    </div><!-- end ngRepeat: e in c.elements --><div ng-repeat="e in c.elements" class="ng-scope">
-                        <img src="images/badge.png" class="small layout-padding" ng-click="loadElement(e); setCategory(c)" layout-padding="" role="button" tabindex="0">
-                    </div><!-- end ngRepeat: e in c.elements --><div ng-repeat="e in c.elements" class="ng-scope">
-                        <img src="images/points.png" class="small layout-padding" ng-click="loadElement(e); setCategory(c)" layout-padding="" role="button" tabindex="0">
-                    </div><!-- end ngRepeat: e in c.elements -->
-                </div>
-                <md-divider style="border-top-color: rgba(0,0,0,0.12); margin-left: 10px;margin-right: 10px;margin-bottom: 10px;">
-            	</md-divider>
+                              <label class="ng-binding">Recompensas</label>
+                          </div><!-- end ngRepeat: e in getElements() --><div ng-repeat="e in getElements()" layout="column" layout-align="center start" layout-padding="" class="layout-padding ng-scope layout-align-center-start layout-column">
+                              <img src="images/points.png" class="average">
 
-            </div>
-        </md-card><!-- end ngRepeat: c in categories -->
-    </div>
+                              <label class="ng-binding">Pontos</label>
+                          </div><!-- end ngRepeat: e in getElements() -->
+                      </div>
+                  </div>
+                  <md-divider class="max-width"></md-divider>
+                  <div layout="column" layout-align="center center" flex="100" class="layout-align-center-center layout-column flex-100">
+                      <label class="text-very-huge">Seu sistema educacional adaptativo foi configurado com sucesso </label>
+                      <label class="title"> Clique em continuar para conferir o sistema configurado!</label>
 
-
-
-
-
+                  </div>
+              </div>
+              </div>
 
 
             </div>
@@ -853,9 +770,6 @@
           </md-divider>
               <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="margin-bottom:  5px; float:  right; margin-right:  5px; background-color: rgb(1,49,97);">
                   Continuar
-              </button>
-              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" style="margin-bottom:  5px; float:  right; margin-right:  10px;">
-                  Voltar
               </button>
 
 
